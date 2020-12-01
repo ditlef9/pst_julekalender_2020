@@ -2,7 +2,7 @@
 
 **About**
 
-This project contains soultions for xmas calendar at https://npst.no
+This project contains soultions for xmas calendar at https://npst.no.
 The solution is programmetd in Python.
 
 **How to install**
