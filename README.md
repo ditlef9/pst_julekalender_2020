@@ -3,7 +3,7 @@
 **About**
 
 This project contains soultions for xmas calendar at https://npst.no.
-The solution is programmetd in Python.
+The solution is programmed in Python.
 
 **How to install**
 1. Download and install Git from https://git-scm.com/downloads
