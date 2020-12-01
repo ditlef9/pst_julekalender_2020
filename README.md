@@ -6,5 +6,6 @@ The solution is programmetd in Python.
 
 **How to install**
 1. Download and install Git from https://git-scm.com/downloads
-2. Download and install PyCharm from https://www.jetbrains.com/pycharm/download/
-3. In PyCharm create new project from Git with URL https://github.com/europa9/npst_2020.git
+2. Download and install Python 3.9 or newer from https://www.python.org/downloads/
+3. Download and install PyCharm from https://www.jetbrains.com/pycharm/download/
+4. In PyCharm create new project from Git with URL https://github.com/europa9/npst_2020.git
