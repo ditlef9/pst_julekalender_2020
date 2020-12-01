@@ -12,4 +12,5 @@ The solution is programmetd in Python.
 4. In PyCharm create new project from Git with URL https://github.com/europa9/npst_2020.git
 
 **How to run**
+
 Go to main.py and click Shift+F10 to run code.
