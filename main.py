@@ -5,7 +5,7 @@
 import day01
 
 class Main:
-    print('NPST')
+    print('NPST 2020')
 
 
 
