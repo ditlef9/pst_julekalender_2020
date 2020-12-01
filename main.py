@@ -2,7 +2,7 @@
 # Date: 24.11.2020
 # Version: 1.0
 
-from day01.day01 import Day01
+from day01_rot24.day01 import Day01
 
 
 class Main:
