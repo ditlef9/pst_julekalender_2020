@@ -6,7 +6,8 @@ from day01.day01 import Day01
 
 
 class Main:
-    print('~~ NPST 2020 ~~')
+    print('')
+    print('~~~~~~~~~~~~~~~~~~~~~~~~ NPST 2020 ~~~~~~~~~~~~~~~~~~~~~~~~')
 
     # Comment away whatever you dont want
     day01 = Day01()
