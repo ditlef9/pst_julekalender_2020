@@ -29,8 +29,8 @@ class Day01:
     print('~~~~~~~~~~~~~~~~~~~~~~~~ Day 01 ~~~~~~~~~~~~~~~~~~~~~~~~')
 
     access_code = 'RUV{JgkJqPåGtFgvLwnKilgp}'
-    alphabeth_lowercase = 'abcdefghijklmnopqrstuvwxyzæøå'
-    alphabeth_uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ'
+    alphabeth_lowercase = 'abcdefghijklmnopqrstuvwxyz'
+    alphabeth_uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     solution = "";
 
     for access_code_character in access_code:
@@ -41,7 +41,7 @@ class Day01:
         for find_char in alphabeth_lowercase:
             x = x+1
             if(find_char == access_code_character):
-                switch_with_number = (x + 26) % len(alphabeth_lowercase)
+                switch_with_number = (x + 23) % len(alphabeth_lowercase)
                 new_char = alphabeth_lowercase[switch_with_number]
                 print("Char " + str(access_code_character) + " -> " + str(new_char) + " -- char number " + str(x) + " in alpabeth, switch with number " + str(switch_with_number))
 
@@ -54,7 +54,7 @@ class Day01:
         for find_char in alphabeth_uppercase:
             x = x+1
             if(find_char == access_code_character):
-                switch_with_number = (x + 26) % len(alphabeth_uppercase)
+                switch_with_number = (x + 23) % len(alphabeth_uppercase)
                 new_char = alphabeth_uppercase[switch_with_number]
                 print("Char " + str(access_code_character) + " -> " + str(new_char) + " -- char number " + str(x) + " in alpabeth, switch with number " + str(switch_with_number))
 
