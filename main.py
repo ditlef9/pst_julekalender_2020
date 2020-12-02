@@ -3,7 +3,7 @@
 # Version: 1.0
 
 from day01_rot24.day01 import Day01
-from day02.day02 import Day02
+from day02_character_picking.day02 import Day02
 
 
 class Main:
@@ -11,5 +11,7 @@ class Main:
     print('~~~~~~~~~~~~~~~~~~~~~~~~ NPST 2020 ~~~~~~~~~~~~~~~~~~~~~~~~')
 
     # Comment away whatever you dont want
-    day02 = Day02()
+    #day01_rot24 = Day01()
+    #day02_character_picking = Day02()
+
 

@@ -1,5 +1,5 @@
 # Filename: day01_rot24.py
-# Author: S D
+# Author: S Ditlefsen
 # License: http://opensource.org/licenses/gpl-license.php GNU Public License
 
 # About class:
