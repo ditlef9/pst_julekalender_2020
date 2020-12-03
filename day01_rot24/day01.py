@@ -9,7 +9,11 @@
 #       A -> Y
 #       a -> y
 #       B -> Z
-#       b ->> z
+#       b -> z
+#       C -> A
+#       C -> a
+#       D -> B
+#       D -> b
 #
 # Special characters like { and } should not change
 
