@@ -42,13 +42,31 @@ class Day04:
                 file = os.path.join(directory, filename)
 
                 # Read SQL
-                sql_commands = repr(open(file, 'rb').read())
+                sql_commands = repr(open(file, 'r').read())
+
+                # Remove start " and '
+                if sql_commands.startswith('"'):
+                    sql_commands = sql_commands[1:]
+                if sql_commands.startswith("'"):
+                    sql_commands = sql_commands[1:]
+
+                # Remove end  " and '
+                if sql_commands.endswith('"'):
+                    sql_commands = sql_commands[:-1]
+                if sql_commands.endswith("'"):
+                    sql_commands = sql_commands[:-1]
+
+                # Replace line shift
+                sql_commands = sql_commands.replace("", "")
+
+                print("\n" + file)
                 print(sql_commands)
 
                 try:
                     c = conn.cursor()
                     c.execute(sql_commands)
                 except Error as e:
+                    print("SQL error: ")
                     print(e)
 
                 continue
