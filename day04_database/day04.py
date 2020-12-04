@@ -18,7 +18,8 @@ class Day04:
     print('')
     print('~~~~~~~~~~~~~~~~~~~~~~~~ Day 04 ~~~~~~~~~~~~~~~~~~~~~~~~')
 
-    def maalTall(paaskeaften):
+    """- MeasurementNumber = Days between input date and 1900 -----------------"""
+    def measurementNumber(paaskeaften):
         d0 = date(1900, 1, 1)
         paaskeaften = paaskeaften.split("-")
         year = paaskeaften[0]
@@ -26,8 +27,13 @@ class Day04:
         day = paaskeaften[2]
         d1 = date(int(year), int(month), int(day))
         delta = d1 - d0
+
+        # print measurement number
+        print(str(delta.days-1) + "\t", end='')
+
         return(delta.days-1)
 
+    """- DateEaster = Date when easter day is ---------------------------------"""
     def dateEaster(year):
         if year >= 1900 and year <= 2099:
             a = year % 19
@@ -45,15 +51,15 @@ class Day04:
                 if(dateofeaster < 10):
                     dateofeaster = "0" + str(dateofeaster);
                 print(str(year) + "-04-" + str(dateofeaster)+ "\t", end='')
-                paaskeAften = str(year) + "-04-" + str(dateofeaster)
+                easterDay = str(year) + "-04-" + str(dateofeaster)
             else:
                 print(str(year) + "-03-" + str(dateofeaster)+ "\t", end='')
-                paaskeAften = str(year) + "-03-" + str(dateofeaster)
+                easterDay = str(year) + "-03-" + str(dateofeaster)
         else:
             print("There is an error")
-        return paaskeAften
-    """ Scriptstart """
+        return easterDay
 
+    """- Scriptstart ----------------------------------------------------------"""
     # Print header
     print("DatoPaaskeId\tPaaskeAften\tPaaskeFerieUke\tAar\tMaalTall")
     print("------------ ---------------- -------------- ------ -----------")
@@ -65,10 +71,14 @@ class Day04:
         ## Print ID
         print(str(x) + "\t", end='')
 
-        # Print easter day
-        maal_tall = maalTall(dateEaster(year))
-        print(str(maal_tall) + "\t", end='')
-        sum += maal_tall
+        # Print easter day + measurement number
+        measurement_number = measurementNumber(dateEaster(year))
+
+        # Sum measurement numbers (solution is sum of measurement numbers)
+        sum += measurement_number
+
         # New line
         print(" ")
+
+    # Print solution
     print("PST{"+str(sum)+"}")
