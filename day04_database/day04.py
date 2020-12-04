@@ -67,7 +67,7 @@ class Day04:
 
         # Print easter day
         maal_tall = maalTall(dateEaster(year))
-        print(str(maal_tall))
+        print(str(maal_tall) + "\t", end='')
         sum += maal_tall
         # New line
         print(" ")
