@@ -4,15 +4,16 @@
 
 
 # About class:
-#   Creates a SQLite database
-#   Runs commands
+#   The assignment is a Microsoft SQL database query which should calcualte the easter day. However the calculation
+#   is wrong. This Python class calculates the day correctly. "Maaltall" is days between Jan 1st 1900 and easter day.
+#   The solution is to sum "Maaltall" for all rows.
 
 # Assignment:
-#   Vi i mellomledergruppa er svært interessert i måltall, og ledelsen ønsker en rapport snarest på summen av kolonnen Maaltall fra og med 2020 til og med 2040. Kan du svare meg med denne summen, omkranset av PST{ og } når du finner ut av det?
+#   Vi i mellomledergruppa er svært interessert i måltall, og ledelsen ønsker en rapport snarest på summen av kolonnen
+#   Maaltall fra og med 2020 til og med 2040. Kan du svare meg med denne summen, omkranset av PST{ og } når du finner ut av det?
 
-import datetime
-from datetime import datetime
 from datetime import date
+
 
 class Day04:
     print('')
@@ -29,9 +30,9 @@ class Day04:
         delta = d1 - d0
 
         # print measurement number
-        print(str(delta.days-1) + "\t", end='')
+        print(str(delta.days - 1) + "\t", end='')
 
-        return(delta.days-1)
+        return (delta.days - 1)
 
     """- DateEaster = Date when easter day is ---------------------------------"""
     def dateEaster(year):
@@ -48,12 +49,12 @@ class Day04:
             if dateofeaster > 31:
                 dateofeaster = dateofeaster - 31
 
-                if(dateofeaster < 10):
+                if (dateofeaster < 10):
                     dateofeaster = "0" + str(dateofeaster);
-                print(str(year) + "-04-" + str(dateofeaster)+ "\t", end='')
+                print(str(year) + "-04-" + str(dateofeaster) + "\t", end='')
                 easterDay = str(year) + "-04-" + str(dateofeaster)
             else:
-                print(str(year) + "-03-" + str(dateofeaster)+ "\t", end='')
+                print(str(year) + "-03-" + str(dateofeaster) + "\t", end='')
                 easterDay = str(year) + "-03-" + str(dateofeaster)
         else:
             print("There is an error")
@@ -63,10 +64,10 @@ class Day04:
     # Print header
     print("DatoPaaskeId\tPaaskeAften\tPaaskeFerieUke\tAar\tMaalTall")
     print("------------ ---------------- -------------- ------ -----------")
-    x=0
+    x = 0
     sum = 0
     for year in range(2020, 2041):
-        x=x+1
+        x = x + 1
 
         ## Print ID
         print(str(x) + "\t", end='')
@@ -81,4 +82,4 @@ class Day04:
         print(" ")
 
     # Print solution
-    print("PST{"+str(sum)+"}")
+    print("PST{" + str(sum) + "}")

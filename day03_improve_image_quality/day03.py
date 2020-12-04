@@ -1,4 +1,4 @@
-# Filename: day03_forbedre.py
+# Filename: day03_improve_image_quality.py
 # Author: S Ditlefsen
 # License: http://opensource.org/licenses/gpl-license.php GNU Public License
 
