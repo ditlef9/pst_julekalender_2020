@@ -9,75 +9,52 @@
 
 # Assignment:
 #   Vi i mellomledergruppa er svært interessert i måltall, og ledelsen ønsker en rapport snarest på summen av kolonnen Maaltall fra og med 2020 til og med 2040. Kan du svare meg med denne summen, omkranset av PST{ og } når du finner ut av det?
-import os
-import sqlite3
-from sqlite3 import Error
+
+import datetime
+
 
 class Day04:
     print('')
     print('~~~~~~~~~~~~~~~~~~~~~~~~ Day 04 ~~~~~~~~~~~~~~~~~~~~~~~~')
 
+    def dateEaster(year):
+        if year >= 1900 and year <= 2099:
+            a = year % 19
+            b = year % 4
+            c = year % 7
+            d = (19 * a + 24) % 30
+            e = (2 * b + 4 * c + 6 * d + 5) % 7
+            dateofeaster = 22 + d + e
+            if year == 1954 or year == 1981 or year == 2049 or year == 2076:
+                dateofeaster = dateofeaster - 7
 
-    """- Create connection -----------------------------------"""
-    def create_connection(db_file):
-        """ create a database connection to the SQLite database
-            specified by db_file
-        :param db_file: database file
-        :return: Connection object or None
-        """
-        conn = None
-        try:
-            conn = sqlite3.connect(db_file)
-            return conn
-        except Error as e:
-            print(e)
+            if dateofeaster > 31:
+                dateofeaster = dateofeaster - 31
 
-        return conn
+                if(dateofeaster < 10):
+                    dateofeaster = "0" + str(dateofeaster);
 
 
-    """- Run SQL files from folder ---------------------------"""
-    def run_sql_files_from_folder(db_file, conn, directory):
-        for filename in os.listdir(directory):
-            if filename.endswith(".sql") :
-                file = os.path.join(directory, filename)
-
-                # Read SQL
-                sql_commands = repr(open(file, 'r').read())
-
-                # Remove start " and '
-                if sql_commands.startswith('"'):
-                    sql_commands = sql_commands[1:]
-                if sql_commands.startswith("'"):
-                    sql_commands = sql_commands[1:]
-
-                # Remove end  " and '
-                if sql_commands.endswith('"'):
-                    sql_commands = sql_commands[:-1]
-                if sql_commands.endswith("'"):
-                    sql_commands = sql_commands[:-1]
-
-                # Replace line shift
-                sql_commands = sql_commands.replace("", "")
-
-                print("\n" + file)
-                print(sql_commands)
-
-                try:
-                    c = conn.cursor()
-                    c.execute(sql_commands)
-                except Error as e:
-                    print("SQL error: ")
-                    print(e)
-
-                continue
+                print(str(year) + "-04-" + str(dateofeaster)+ "\t", end='')
             else:
-                continue
+                print(str(year) + "-03-" + str(dateofeaster)+ "\t", end='')
+        else:
+            print("There is an error")
 
-    """- Scriptstart -----------------------------------------"""
+    """ Scriptstart """
 
-    # Connect to database
-    db_file = r"./day04_database/pythonsqlite.db"
-    conn = create_connection(db_file)
+    # Print header
+    print("DatoPaaskeId\tPaaskeAften\tPaaskeFerieUke\tAar\tMaalTall")
+    print("------------ ---------------- -------------- ------ -----------")
+    x=0
+    for year in range(2020, 2039):
+        x=x+1
 
-    # Run SQL
-    run_sql_files_from_folder(db_file, conn, "./day04_database/sql")
+        ## Print ID
+        print(str(x) + "\t", end='')
+
+        # Print easter day
+        dateEaster(year)
+
+        # New line
+        print(" ")
