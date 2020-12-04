@@ -11,11 +11,22 @@
 #   Vi i mellomledergruppa er svært interessert i måltall, og ledelsen ønsker en rapport snarest på summen av kolonnen Maaltall fra og med 2020 til og med 2040. Kan du svare meg med denne summen, omkranset av PST{ og } når du finner ut av det?
 
 import datetime
-
+from datetime import datetime
+from datetime import date
 
 class Day04:
     print('')
     print('~~~~~~~~~~~~~~~~~~~~~~~~ Day 04 ~~~~~~~~~~~~~~~~~~~~~~~~')
+
+    def maalTall(paaskeaften):
+        d0 = date(1900, 1, 1)
+        paaskeaften = paaskeaften.split("-")
+        year = paaskeaften[0]
+        month = paaskeaften[1]
+        day = paaskeaften[2]
+        d1 = date(int(year), int(month), int(day))
+        delta = d1 - d0
+        return(delta.days-1)
 
     def dateEaster(year):
         if year >= 1900 and year <= 2099:
@@ -33,28 +44,31 @@ class Day04:
 
                 if(dateofeaster < 10):
                     dateofeaster = "0" + str(dateofeaster);
-
-
                 print(str(year) + "-04-" + str(dateofeaster)+ "\t", end='')
+                paaskeAften = str(year) + "-04-" + str(dateofeaster)
             else:
                 print(str(year) + "-03-" + str(dateofeaster)+ "\t", end='')
+                paaskeAften = str(year) + "-03-" + str(dateofeaster)
         else:
             print("There is an error")
-
+        return paaskeAften
     """ Scriptstart """
 
     # Print header
     print("DatoPaaskeId\tPaaskeAften\tPaaskeFerieUke\tAar\tMaalTall")
     print("------------ ---------------- -------------- ------ -----------")
     x=0
-    for year in range(2020, 2039):
+    sum = 0
+    for year in range(2020, 2041):
         x=x+1
 
         ## Print ID
         print(str(x) + "\t", end='')
 
         # Print easter day
-        dateEaster(year)
-
+        maal_tall = maalTall(dateEaster(year))
+        print(str(maal_tall))
+        sum += maal_tall
         # New line
         print(" ")
+    print("PST{"+str(sum)+"}")
