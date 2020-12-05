@@ -6,7 +6,8 @@
 #from day02_character_picking.day02 import Day02
 #from day04_database.day04 import Day04
 #from day05_medarbeiderundersokelse.day05_medarbeiderundersokelse import Day05Medarbeiderundersokelse
-from day05_dokumentasjonsvelvet.day05_dokumentasjonsvelvet import Day05Dokumentasjonsvelvet
+#from day05_dokumentasjonsvelvet.day05_dokumentasjonsvelvet import Day05Dokumentasjonsvelvet
+from day03_kladd.Day03Kladd import Day03Kladd
 
 
 class Main:
@@ -16,8 +17,9 @@ class Main:
     # Comment away whatever you dont want
     #day01_rot24 = Day01()
     #day02_character_picking = Day02()
+    day03Kladd = Day03Kladd()
     #day04 = Day04()
     #day05_medarbeiderundersokelse = Day05Medarbeiderundersokelse()
-    day05_dokumentasjonsvelvet = Day05Dokumentasjonsvelvet()
+    #day05_dokumentasjonsvelvet = Day05Dokumentasjonsvelvet()
 
 
