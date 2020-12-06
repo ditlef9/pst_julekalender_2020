@@ -1,4 +1,4 @@
-# Filename: day05_medarbeiderundersokelse.py
+# Filename: easter04_day05_medarbeiderundersokelse.py
 # Author: S Ditlefsen
 # Date 5 Dec 2020
 # License: http://opensource.org/licenses/gpl-license.php GNU Public License

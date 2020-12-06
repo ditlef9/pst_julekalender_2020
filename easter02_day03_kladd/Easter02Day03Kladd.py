@@ -1,4 +1,4 @@
-# Filename: day05_dokumentasjonsvelvet.py
+# Filename: Easter02Day03Kladd.py
 # Author: S Ditlefsen
 # Date 5 Dec 2020
 # License: http://opensource.org/licenses/gpl-license.php GNU Public License
@@ -15,7 +15,7 @@
 
 
 
-class Day03Kladd:
+class Easter02Day03Kladd:
     print('')
     print('~~~~~~~~~~~~~~~~~~~~~~~~ Day 03 ~~~~~~~~~~~~~~~~~~~~~~~~')
     print('~~~~~~~~~~~~~~~~~~~~~~~~~ Kladd ~~~~~~~~~~~~~~~~~~~~~~~~')
