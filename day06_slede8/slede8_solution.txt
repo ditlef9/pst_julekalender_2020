@@ -1,0 +1,100 @@
+
+; Første byte med føde er et tall N som representerer
+; antallet påfølgende bytes med føde.
+; Beregn summen av de N påfølgende tallene,
+; og gi resultatet som oppgulp.
+
+; LES N
+LES r0 ; Les N fra føde
+
+; Test N føde størrelse i bytes
+SETT r1, 0x4;
+LIK r0, r1        ; r0 == r1 => flag = 0 (false)
+BHOPP merkelapp04 ; hopper ikke, siden flag = 0
+
+SETT r1, 0x01;
+LIK r0, r1        ; r0 == r1 => flag = 0 (false)
+BHOPP merkelapp01 ; hopper ikke, siden flag = 0
+
+SETT r1, 0x02;
+LIK r0, r1        ; r0 == r1 => flag = 0 (false)
+BHOPP merkelapp02 ; hopper ikke, siden flag = 0
+
+
+SETT r1, 0x0a;
+LIK r0, r1        ; r0 == r1 => flag = 0 (false)
+BHOPP merkelapp0a ; hopper ikke, siden flag = 0
+
+merkelapp04:
+LES r1
+LES r2
+LES r3
+LES r4
+
+PLUSS r1, r2
+PLUSS r3, r4
+PLUSS r1, r3
+
+SKRIV r1
+
+STOPP          ; avslutt før vi går tom for føde
+
+
+merkelapp01:
+LES r1
+
+SKRIV r1
+
+STOPP          ; avslutt før vi går tom for føde
+
+
+merkelapp02:
+LES r1
+LES r2
+
+PLUSS r1, r2
+
+SKRIV r1
+
+STOPP          ; avslutt før vi går tom for føde
+
+
+
+merkelapp0a:
+;0a -> 01 02 03 04 05 0b 0c 0d 0e 0f
+LES r1
+LES r2
+LES r3
+LES r4
+LES r5
+LES r6
+LES r7
+LES r8
+LES r9
+LES r10
+
+
+PLUSS r1, r2
+PLUSS r3, r4
+PLUSS r5, r6
+PLUSS r7, r8
+PLUSS r9, r10
+
+; 1, 3,   5, 7,   9
+
+PLUSS r1, r3
+PLUSS r5, r7
+
+; 1, 5, 9
+
+PLUSS r1, r5
+
+
+; 1, 9
+PLUSS r1, r9
+
+SKRIV r1
+
+STOPP          ; avslutt før vi går tom for føde
+
+; Godkjent! Din verifikasjonskode er: PST{ATastyByteOfSled}

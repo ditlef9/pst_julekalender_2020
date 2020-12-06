@@ -1,0 +1,73 @@
+
+; Skriv ut strengen "Hello, World!\n"
+
+; Tips: 
+; - Du kan velge om oppgulp skal vise ASCII- eller hex-verdier
+; - Det enkle er ofte det beste
+
+; Lykke til!
+
+; A=0x41, A-41 B-42 C-43 D-44
+; E-45 F-46 G-47 H-48
+; I-49 J-4A K-4B L-4C
+; M-4D N-4E O-4F P-50
+; Q-51 R-52 S-53 T-54
+; U-55 V-56 W-57 X-58
+; Y-59 Z-5A a-61 b-62
+; c-63 d-64 e-65 f-66
+; g-67 h-68 i-69 j-6A
+; k-6B l-6C m-6D n-6E
+; o-6F p-70 q-71 r-72
+; s-73 t-74 u-75 v-76
+; w-77 x-78 y-79 z-7A
+
+SETT r0, 0x48
+SKRIV r0
+
+SETT r0, 0x65
+SKRIV r0
+
+SETT r0, 0x6C
+SKRIV r0
+
+SETT r0, 0x6C
+SKRIV r0
+
+SETT r0, 0x6F
+SKRIV r0
+
+SETT r0, 0x2c
+SKRIV r0
+
+SETT r0, 0x20
+SKRIV r0
+
+SETT r0, 0x57
+SKRIV r0
+
+SETT r0, 0x6f
+SKRIV r0
+
+SETT r0, 0x72
+SKRIV r0
+
+SETT r0, 0x6c
+SKRIV r0
+
+SETT r0, 0x64
+SKRIV r0
+
+SETT r0, 0x21
+SKRIV r0
+
+SETT r0, 0x0a
+SKRIV r0
+
+
+
+STOPP          ; avslutt før vi går tom for føde
+
+
+
+;Godkjent!
+;EGG{Hello, SLEDE8!}

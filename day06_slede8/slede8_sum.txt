@@ -1,0 +1,16 @@
+
+; Les to tall fra føde og beregn summen
+; Skriv så ut summen
+
+; Tips:
+; - Du kan velge om oppgulp skal vise ASCII- eller hex-verdier
+; - Nyttige instruksjoner er 'LES', 'SKRIV' og 'PLUSS'
+
+LES r0         ; r0 = 0x0e
+LES r1         ; r1= 0x20
+
+PLUSS r0, r1
+
+SKRIV r0       ; skriv 0x2e ('.')
+
+STOPP
