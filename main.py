@@ -8,6 +8,8 @@
 #from easter04_day05_medarbeiderundersokelse.easter04_day05_medarbeiderundersokelse import Day05Medarbeiderundersokelse
 #from day05_dokumentasjonsvelvet.day05_dokumentasjonsvelvet import Day05Dokumentasjonsvelvet
 #from easter02_day03_kladd.Easter02Day03Kladd import Day03Kladd
+#from easter01_day01_rot13_shift.easter01_day01_rot13_shift import Easter01Rot13Shift
+from day07_signal.Day07Signal import Day07Signal
 
 
 class Main:
@@ -22,4 +24,7 @@ class Main:
     #easter04_day05_medarbeiderundersokelse = Day05Medarbeiderundersokelse()
     #day05_dokumentasjonsvelvet = Day05Dokumentasjonsvelvet()
 
+    #easter01 = Easter01Rot13Shift();
+
+    day07Signal = Day07Signal()
 
