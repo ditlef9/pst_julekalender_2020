@@ -17,3 +17,5 @@ class Day07Signal:
 
     for char in read_file:
         print(char, end='')
+        
+ # Open file in Universal Radio Hacker. Go to Analysis and view data as ASCII: PST{0n_0ff_k3y1ng_1s_34sy!}
