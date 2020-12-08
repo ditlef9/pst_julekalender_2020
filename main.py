@@ -9,12 +9,14 @@
 #from day05_dokumentasjonsvelvet.day05_dokumentasjonsvelvet import Day05Dokumentasjonsvelvet
 #from easter02_day03_kladd.Easter02Day03Kladd import Day03Kladd
 #from easter01_day01_rot13_shift.easter01_day01_rot13_shift import Easter01Rot13Shift
-from day07_signal.Day07Signal import Day07Signal
+#from day07_signal.Day07Signal import Day07Signal
+from easter01_day01_rot13_shift.easter01_day01_rot13_shift import Easter01Rot13Shift
 
 
 class Main:
     print('')
     print('~~~~~~~~~~~~~~~~~~~~~~~~ NPST 2020 ~~~~~~~~~~~~~~~~~~~~~~~~')
+    easter01 = Easter01Rot13Shift();
 
     # Comment away whatever you dont want
     #day01_rot24 = Day01()
@@ -23,8 +25,5 @@ class Main:
     #day04 = Day04()
     #easter04_day05_medarbeiderundersokelse = Day05Medarbeiderundersokelse()
     #day05_dokumentasjonsvelvet = Day05Dokumentasjonsvelvet()
-
-    #easter01 = Easter01Rot13Shift();
-
-    day07Signal = Day07Signal()
+    #day07Signal = Day07Signal()
 

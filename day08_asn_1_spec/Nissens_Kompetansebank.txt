@@ -1,0 +1,22 @@
+Det er viktig med faglig utvikling, også nå i førjulsstria. Dagens tema er ASN.1. Her er litt hjernetrim fra Nissens Kompetansebank™.
+
+MIIBOTCCATAwggEnMIIBHjCCARUwggEMMIIBAzCB+zCB8zCB6zCB4zCB2zCB0zCByzCBwzCBuzCBszCBqzCBozCBnDCBlDCBjDCBhDB9MHYwbzBoMGEwWjBTMEwwRTA+MDcwMTAqMCMwHDAVMA4wBwUAoQMCAROgAwIBA6EDAgEMogMCAQChAwIBE6ADAgEBoQMCARKkAgUAoQMCARShAwIBDqIDAgEYoQMCAQShAwIBEqEDAgEOoQMCAQ6hAwIBB6IDAgECogMCAQigAwIBAaIDAgENogMCARKiAwIBAKMCBQCiAwIBE6IDAgESogMCAQ+hAwIBEaEDAgEOoQMCAQugAwIBAKIDAgEDoQMCAQyhAwIBFKEDAgESoQMCAQ+gAwIBAaEDAgEMoAMCAQOhAwIBEaEDAgEOogMCAQs=
+
+Spec DEFINITIONS ::= BEGIN
+    LinkedList ::= Node
+    Node ::= SEQUENCE {
+        child CHOICE {
+            node Node,
+            end NULL
+        },
+        value CHOICE {
+            digit                [0] INTEGER(0..9),
+            lowercase           [1] INTEGER(1..26),
+            uppercase           [2] INTEGER(1..26),
+            leftCurlyBracket    [3] NULL,
+            rightCurlyBracket   [4] NULL
+        }
+    }
+END
+
+Lykke til!

@@ -1,0 +1,16 @@
+Spec DEFINITIONS ::= BEGIN
+    LinkedList ::= Node
+    Node ::= SEQUENCE {
+        child CHOICE {
+            node Node,
+            end NULL
+        },
+        value CHOICE {
+            digit                [0] INTEGER(0..9),
+            lowercase           [1] INTEGER(0..25),
+            uppercase           [2] INTEGER(0..25),
+            leftCurlyBracket    [3] NULL,
+            rightCurlyBracket   [4] NULL
+        }
+    }
+END
