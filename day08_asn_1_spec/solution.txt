@@ -1,0 +1,164 @@
+[1] {
+INTEGER 0x13 (19 decimal)           t
+}
+}
+[0] {
+INTEGER 0x03 (3 decimal)            3
+}
+}
+[1] {
+INTEGER 0x0c (12 decimal)           m
+}
+}
+[2] {
+INTEGER 0x00 (0 decimal)            C
+}
+}
+[1] {
+INTEGER 0x13 (19 decimal)           t
+}
+}
+[0] {
+INTEGER 0x01 (1 decimal)            1
+}
+}
+[1] {
+INTEGER 0x12 (18 decimal)           s
+}
+}
+[4] {
+NULL                                }
+}
+}
+[1] {
+INTEGER 0x14 (20 decimal)           u
+}
+}
+[1] {
+INTEGER 0x0e (14 decimal)           o
+}
+}
+[2] {
+INTEGER 0x18 (24 decimal)           Y
+}
+}
+[1] {
+INTEGER 0x04 (4 decimal)            e
+}
+}
+[1] {
+INTEGER 0x12 (18 decimal)           s
+}
+}
+[1] {
+INTEGER 0x0e (14 decimal)           o
+}
+}
+[1] {
+INTEGER 0x0e (14 decimal)           o
+}
+}
+[1] {
+INTEGER 0x07 (7 decimal)            h
+}
+}
+[2] {
+INTEGER 0x02 (2 decimal)            C
+}
+}
+[2] {
+INTEGER 0x08 (8 decimal)            I
+}
+}
+[0] {
+INTEGER 0x01 (1 decimal)            1
+}
+}
+[2] {
+INTEGER 0x0d (13 decimal)           N
+}
+}
+[2] {
+INTEGER 0x12 (18 decimal)           S
+}
+}
+[2] {
+INTEGER 0x00 (0 decimal)            A
+}
+}
+[3] {
+NULL                                {
+}
+}
+[2] {
+INTEGER 0x13 (19 decimal)           T
+}
+}
+[2] {
+INTEGER 0x12 (18 decimal)           S
+}
+}
+[2] {
+INTEGER 0x0f (15 decimal)           P
+}
+}
+[1] {
+INTEGER 0x11 (17 decimal)           r
+}
+}
+[1] {
+INTEGER 0x0e (14 decimal)           o
+}
+}
+[1] {
+INTEGER 0x0b (11 decimal)           l
+}
+}
+[0] {
+INTEGER 0x00 (0 decimal)            1
+}
+}
+[2] {
+INTEGER 0x03 (3 decimal)           D
+}
+}
+[1] {
+INTEGER 0x0c (12 decimal)           m
+}
+}
+[1] {
+INTEGER 0x14 (20 decimal)           u
+}
+}
+[1] {
+INTEGER 0x12 (18 decimal)           s
+}
+}
+[1] {
+INTEGER 0x0f (15 decimal)           p
+}
+}
+[0] {
+INTEGER 0x01 (1 decimal)            2
+}
+}
+[1] {
+INTEGER 0x0c (12 decimal)           m
+}
+}
+[0] {
+INTEGER 0x03 (3 decimal)            4
+}
+}
+[1] {
+INTEGER 0x11 (17 decimal)           r
+}
+}
+[1] {
+INTEGER 0x0e (14 decimal)           o
+}
+   }
+   [2] {
+      INTEGER 0x0b (11 decimal)     L
+   }
+}
