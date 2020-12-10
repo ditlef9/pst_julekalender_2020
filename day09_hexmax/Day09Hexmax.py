@@ -66,6 +66,7 @@ class Day09Hexmax:
 
 
         # Solution to zip
+        # 1F8B0800F149CE5F02FF0B080EA9FE307FF94E08EE6B01E25608BD7C672D00124DC95F1D000000
         print("\n\n(3) Hex solution code is:")
         print(solution)
         print("\nCopy the code and open HxD program. Create new file. Paste the code into HxD.")

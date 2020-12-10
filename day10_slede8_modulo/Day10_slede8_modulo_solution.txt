@@ -1,0 +1,14 @@
+
+; Føde består av to tall, A og B
+; Skriv ut resultatet av (A + B) mod 256 som en ASCII-streng
+
+; Eksempel: A=0xA0 og B=0x08 => '168'
+; Eksempel: A=0xFF og B=0xFF => '254'
+
+
+; Modulo a%n => a - (n * int(a/n)).
+
+LES r0
+LES r1
+PLUSS r0, r1
+SKRIV r0
