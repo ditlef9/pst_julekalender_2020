@@ -1,6 +1,3 @@
-;
-; E-learning code: 82ec70284b51eb12
-; Tool: https://slede8.npst.no/
 
 ; Føde består av to tall, A og B
 ; Skriv ut resultatet av (A + B) mod 256 som en ASCII-streng
@@ -8,23 +5,9 @@
 ; Eksempel: A=0xA0 og B=0x08 => '168'
 ; Eksempel: A=0xFF og B=0xFF => '254'
 
-; ALPHABET:
-; A=0x41, A-41 B-42 C-43 D-44
-; E-45 F-46 G-47 H-48
-; I-49 J-4A K-4B L-4C
-; M-4D N-4E O-4F P-50
-; Q-51 R-52 S-53 T-54
-; U-55 V-56 W-57 X-58
-; Y-59 Z-5A a-61 b-62
-; c-63 d-64 e-65 f-66
-; g-67 h-68 i-69 j-6A
-; k-6B l-6C m-6D n-6E
-; o-6F p-70 q-71 r-72
-; s-73 t-74 u-75 v-76
-; w-77 x-78 y-79 z-7A
 
 
-; Sum A+B, write to r0. Write r2=255. Write r3=1
+; Sum A+B, write to r0 and r15
 LES r0
 LES r1
 PLUSS r0, r1
@@ -35,12 +18,62 @@ BHOPP loop
 ; We start at loop for r0 % 256
 loop:
 MEL r0, r2   ; r0 <= r1 => flag = 1 (true) (0x0c <= 0xFF)
-BHOPP solutuion;
+BHOPP hex_to_ascii; 
 
 ; r0 > r1, we have solution
 MINUS r0, r2
 MINUS r0, r3
 BHOPP loop
 
-solutuion:
-SKRIV r0
+; Transfer hex value to ascii
+; r4, r5, r6 is used to to solution
+hex_to_ascii:
+; SKRIV r0
+SETT r1, 0x01; Set r1 to 0x01 for increment
+SETT r4, 0; Set r4 to 0x00
+SETT r2, 0x64; Set r2 dec100
+BHOPP hundred_loop
+
+hundred_loop:
+PLUSS r4, r1
+ME r0, r2 ; Sjekk, true=hopp ut av loop
+BHOPP ten_loop_pre
+
+MINUS r0, r2; r0-100
+BHOPP hundred_loop
+
+
+ten_loop_pre:
+SETT r2, 0x0a
+BHOPP ten_loop
+
+
+
+ten_loop:
+PLUSS r5, r1
+ME r0, r2 ; Sjekk, true=hopp ut av loop
+BHOPP one_loop_pre
+
+MINUS r0, r2; r0-100
+BHOPP ten_loop
+
+
+
+one_loop_pre:
+SETT r2, 0x0a
+BHOPP one_loop
+
+
+
+one_loop:
+PLUSS r6, r1
+ME r0, r2 ; Sjekk, true=hopp ut av loop
+BHOPP conver_to_hex
+
+MINUS r0, r2; r0-100
+BHOPP one_loop
+
+
+
+conver_to_hex:
+STOPP
