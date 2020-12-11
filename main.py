@@ -12,7 +12,8 @@
 #from day07_signal.Day07Signal import Day07Signal
 #from day08_asn_1_spec.Day08ASN1 import Day08ASN1
 #from easter01_day01_rot13_shift.easter01_day01_rot13_shift import Easter01Rot13Shift
-from day09_hexmax.Day09Hexmax import Day09Hexmax
+#from day09_hexmax.Day09Hexmax import Day09Hexmax
+from day11_sqlite_md5_sum_changed.Day11SqliteMd5SumChanged import Day11SqliteMd5SumChanged
 
 
 class Main:
@@ -29,5 +30,5 @@ class Main:
     #day05_dokumentasjonsvelvet = Day05Dokumentasjonsvelvet()
     #day07Signal = Day07Signal()
     #day08 = Day08ASN1()
-    day09 = Day09Hexmax()
-
+    #day09 = Day09Hexmax()
+    day11 = Day11SqliteMd5SumChanged()
