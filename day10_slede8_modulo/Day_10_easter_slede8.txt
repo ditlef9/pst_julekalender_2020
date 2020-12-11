@@ -1,0 +1,138 @@
+
+; Føde består av to tall, A og B
+; Skriv ut resultatet av A + B som en ASCII-streng
+
+; Eksempel: A=0xA0 og B=0x08 => '168'
+; Eksempel: A=0xFF og B=0xFF => '510'
+
+; Sum A+B, write to r0 and r15
+LES r0
+LES r1
+SETT r2, 0xFF
+MINUS r2, r0; r2=256-r0
+MEL r1,r2
+BHOPP lessThan256
+HOPP moreThan256
+
+lessThan256:
+SETT r15,0x00 ;sett r15 til false
+PLUSS r0, r1
+SETT r1, 0x00
+SETT r2, 0x64; Set r2 dec100
+HOPP hex_to_ascii
+
+;setter r7,r8,r9 til 255
+moreThan256:
+MINUS r1,r2
+SETT r0, r1
+SETT r2, 0x2c ;44 (100-56)
+SETT r7, 0x02
+SETT r8, 0x05
+SETT r9, 0x05
+SETT r0, r1
+HOPP hex_to_ascii
+
+; Transfer hex value to ascii
+; r4, r5, r6 is used to to solution
+hex_to_ascii:
+; SKRIV r0
+SETT r1, 0x01; Set r1 to 0x01 for increment
+SETT r2, 0x64; Set r2 dec100
+SETT r4, 0; Set r4 to 0x00
+BHOPP hundred_loop
+
+
+
+; 100 LOOP
+hundred_loop:
+ME r0, r2 ; Sjekk at , true=hopp ut av loop
+BHOPP ten_loop
+
+MINUS r0, r2; r0-100
+PLUSS r4, r1
+HOPP hundred_loop
+
+
+
+; 10 LOOP
+ten_loop:
+SETT r2, 0x0a
+ME r0, r2 ; Sjekk, true=hopp ut av loop
+BHOPP one_loop
+
+MINUS r0, r2; r0-100
+PLUSS r5, r1
+HOPP ten_loop
+
+
+
+
+; 1 LOOP
+one_loop:
+SETT r2, 0x01
+ME r0, r2 ; Sjekk, true=hopp ut av loop
+BHOPP conver_to_hex
+
+MINUS r0, r2; r0-100
+PLUSS r6, r1
+HOPP one_loop
+
+
+; CONVERT TO HEX
+; WE HAVE THREE VALUES
+; r4,r5,r6 - each with numbers 0-9 DEC
+; dec_ascii_30=0
+; dec_ascii_31=1
+; dec_ascii_32=2 etc
+conver_to_hex:
+SETT r10, 0x0a; sett r10 = 10
+PLUSS r6, r9 ;adder r6 og r9
+SEL r6, r10
+BHOPP inkrementer_r5
+HOPP adder_r5_r8
+
+inkrementer_r5:
+PLUSS r5, r2 ;r5+1
+MINUS r6, r10
+
+adder_r5_r8:
+PLUSS r5, r8
+SEL r5, r10
+BHOPP inkrementer_r4
+HOPP adder_r4_r7
+
+inkrementer_r4:
+PLUSS r4, r2 ;r4+1
+MINUS r5, r10
+
+
+adder_r4_r7:
+PLUSS r4, r7
+
+SETT r15, 0x30; Sett r15 to 0x30 - dec48
+PLUSS r4, r15;
+PLUSS r5, r15;
+PLUSS r6, r15;
+
+
+; Hvis r4=30, r15=30
+MEL r4, r15
+BHOPP solution_r5
+SKRIV r4
+SKRIV r5
+SKRIV r6
+STOPP
+
+solution_r5:
+MEL r5, r15
+BHOPP solution_r6
+SKRIV r5
+SKRIV r6
+STOPP
+
+solution_r6:
+SKRIV r6
+
+;Godkjent!
+;EGG{ba92ae3a9af1a157703ca83d9a9fb11d}
+;IKKE GJENKJENT :(
