@@ -78,6 +78,32 @@ HOPP one_loop
 ; CONVERT TO HEX
 ; WE HAVE THREE VALUES
 ; r4,r5,r6 - each with numbers 0-9 DEC
-; 1) Fill register with 0-9
+; dec_ascii_30=0
+; dec_ascii_31=1
+; dec_ascii_32=2 etc
 conver_to_hex:
+SETT r15, 0x30; Sett r15 to 0x30 - dec48
+PLUSS r4, r15;
+PLUSS r5, r15;
+PLUSS r6, r15;
+
+
+; Hvis r4=0
+SETT r15, 0x29
+ME r4, r15
+BHOPP solution_r5r6
+SKRIV r4
+SKRIV r5
+SKRIV r6
+
 STOPP
+
+
+solution_r5r6:
+ME r5, r15
+BHOPP solution_r6
+SKRIV r5
+SKRIV r4
+
+solution_r6:
+SKRIV r6
