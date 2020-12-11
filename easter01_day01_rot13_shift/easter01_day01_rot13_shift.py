@@ -52,7 +52,7 @@ class Easter01Rot13Shift:
             if(find_char == access_code_character):
                 switch_with_number = (x + shift_counter) % len(alphabeth_lowercase)
                 new_char = alphabeth_lowercase[switch_with_number]
-                print("Char " + str(access_code_character) + " -> " + str(new_char) + " -- char number " + str(x) + " in alpabeth, switch with number " + str(switch_with_number))
+                print("Char " + str(access_code_character) + " -> " + str(new_char) + " -- char number " + str(x) + " in alpabeth, switch with number " + str(switch_with_number) + " " + str(new_char))
 
                 solution = solution + str(new_char)
                 character_found_in_lowercase_or_uppercase = "true";
@@ -65,7 +65,7 @@ class Easter01Rot13Shift:
             if(find_char == access_code_character):
                 switch_with_number = (x + shift_counter) % len(alphabeth_uppercase)
                 new_char = alphabeth_uppercase[switch_with_number]
-                print("Char " + str(access_code_character) + " -> " + str(new_char) + " -- char number " + str(x) + " in alpabeth, switch with number " + str(switch_with_number))
+                print("Char " + str(access_code_character) + " -> " + str(new_char) + " -- char number " + str(x) + " in alpabeth, switch with number " + str(switch_with_number) + " " + str(new_char))
 
                 solution = solution + str(new_char)
                 character_found_in_lowercase_or_uppercase = "true";
@@ -76,12 +76,13 @@ class Easter01Rot13Shift:
 
             solution = solution + str(access_code_character)
 
-        for_counter=for_counter+1
+
         shift_counter=shift_counter-1
 
-        if(for_counter == 4):
-            for_counter = 0;
-            shift_counter=15
+        print("shift_counter=" + str(shift_counter))
+
+        if(shift_counter == 4):
+            shift_counter = 12
             print("RESET")
 
     print("Solution")

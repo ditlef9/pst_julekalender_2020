@@ -13,13 +13,13 @@
 #from day08_asn_1_spec.Day08ASN1 import Day08ASN1
 #from easter01_day01_rot13_shift.easter01_day01_rot13_shift import Easter01Rot13Shift
 #from day09_hexmax.Day09Hexmax import Day09Hexmax
-from day11_sqlite_md5_sum_changed.Day11SqliteMd5SumChanged import Day11SqliteMd5SumChanged
+#from day11_sqlite_md5_sum_changed.Day11SqliteMd5SumChanged import Day11SqliteMd5SumChanged
+from easter01_day01_rot13_shift.easter01_day01_rot13_shift import Easter01Rot13Shift
 
 
 class Main:
     print('')
     print('~~~~~~~~~~~~~~~~~~~~~~~~ NPST 2020 ~~~~~~~~~~~~~~~~~~~~~~~~')
-    #easter01 = Easter01Rot13Shift();
 
     # Comment away whatever you dont want
     #day01_rot24 = Day01()
@@ -31,4 +31,5 @@ class Main:
     #day07Signal = Day07Signal()
     #day08 = Day08ASN1()
     #day09 = Day09Hexmax()
-    day11 = Day11SqliteMd5SumChanged()
+    #day11 = Day11SqliteMd5SumChanged()
+    easter01 = Easter01Rot13Shift();
