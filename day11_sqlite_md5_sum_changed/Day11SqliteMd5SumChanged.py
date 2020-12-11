@@ -125,7 +125,7 @@ class Day11SqliteMd5SumChanged:
     # Sync db
     checkpoint(conn)
 
-    # PRint rows
+    # Print rows
     print_rows(conn, "slemme")
     print_rows(conn, "snille")
 
