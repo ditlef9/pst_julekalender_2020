@@ -88,10 +88,9 @@ PLUSS r5, r15;
 PLUSS r6, r15;
 
 
-; Hvis r4=0
-SETT r15, 0x29
-ME r4, r15
-BHOPP solution_r5r6
+; Hvis r4=30, r15=30
+MEL r4, r15
+BHOPP solution_r5
 SKRIV r4
 SKRIV r5
 SKRIV r6
@@ -99,11 +98,17 @@ SKRIV r6
 STOPP
 
 
-solution_r5r6:
-ME r5, r15
+solution_r5:
+MEL r5, r15
 BHOPP solution_r6
 SKRIV r5
-SKRIV r4
+SKRIV r6
+STOPP
 
 solution_r6:
 SKRIV r6
+
+
+
+;Godkjent! 
+;Din verifikasjonskode er: PST{++AndKissesWillBeAwardedToYou}
