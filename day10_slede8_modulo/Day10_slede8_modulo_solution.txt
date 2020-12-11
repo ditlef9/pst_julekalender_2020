@@ -34,50 +34,50 @@ BHOPP loop
 hex_to_ascii:
 ; SKRIV r0
 SETT r1, 0x01; Set r1 to 0x01 for increment
-SETT r4, 0; Set r4 to 0x00
 SETT r2, 0x64; Set r2 dec100
+SETT r4, 0; Set r4 to 0x00
 BHOPP hundred_loop
 
+
+
+; 100 LOOP
 hundred_loop:
+ME r0, r2 ; Sjekk at , true=hopp ut av loop
+BHOPP ten_loop
+
+MINUS r0, r2; r0-100
 PLUSS r4, r1
-ME r0, r2 ; Sjekk, true=hopp ut av loop
-BHOPP ten_loop_pre
-
-MINUS r0, r2; r0-100
-BHOPP hundred_loop
-
-
-ten_loop_pre:
-SETT r2, 0x0a
-BHOPP ten_loop
+HOPP hundred_loop
 
 
 
+; 10 LOOP
 ten_loop:
-PLUSS r5, r1
-ME r0, r2 ; Sjekk, true=hopp ut av loop
-BHOPP one_loop_pre
-
-MINUS r0, r2; r0-100
-BHOPP ten_loop
-
-
-
-one_loop_pre:
 SETT r2, 0x0a
+ME r0, r2 ; Sjekk, true=hopp ut av loop
 BHOPP one_loop
 
+MINUS r0, r2; r0-100
+PLUSS r5, r1
+HOPP ten_loop
 
 
+
+
+; 1 LOOP
 one_loop:
-PLUSS r6, r1
+SETT r2, 0x01
 ME r0, r2 ; Sjekk, true=hopp ut av loop
 BHOPP conver_to_hex
 
 MINUS r0, r2; r0-100
-BHOPP one_loop
+PLUSS r6, r1
+HOPP one_loop
 
 
-
+; CONVERT TO HEX
+; WE HAVE THREE VALUES
+; r4,r5,r6 - each with numbers 0-9 DEC
+; 1) Fill register with 0-9
 conver_to_hex:
 STOPP
