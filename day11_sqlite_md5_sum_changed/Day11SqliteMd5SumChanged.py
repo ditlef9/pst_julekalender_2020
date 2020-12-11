@@ -42,7 +42,7 @@ class Day11SqliteMd5SumChanged:
             get_last_name = row[1]
             get_md5 = row[2]
 
-            print("Md5 sum mismatch: " + str(x) + "\t" + get_first_name + "\t" + get_last_name + "\t" + get_md5)
+            print(str(x) + "\t" + get_first_name + "\t" + get_last_name + "\t" + get_md5)
 
             x=x+1
         cursor.close()
@@ -123,11 +123,11 @@ class Day11SqliteMd5SumChanged:
     conn = create_connection(db_file)
 
     # Sync db
-    checkpoint(conn)
+    #checkpoint(conn)
 
     # Print rows
-    print_rows(conn, "slemme")
-    print_rows(conn, "snille")
+    #print_rows(conn, "slemme")
+    #print_rows(conn, "snille")
 
     # Check md5 sum
     check_md5sum_in_rows(conn, "slemme")

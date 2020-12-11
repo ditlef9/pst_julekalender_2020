@@ -6,7 +6,7 @@
 #from day02_character_picking.day02 import Day02
 #from day04_database.day04 import Day04
 #from easter04_day05_medarbeiderundersokelse.easter04_day05_medarbeiderundersokelse import Day05Medarbeiderundersokelse
-#from day05_dokumentasjonsvelvet.day05_dokumentasjonsvelvet import Day05Dokumentasjonsvelvet
+from day05_dokumentasjonsvelvet.day05_dokumentasjonsvelvet import Day05Dokumentasjonsvelvet
 #from easter02_day03_kladd.Easter02Day03Kladd import Day03Kladd
 #from easter01_day01_rot13_shift.easter01_day01_rot13_shift import Easter01Rot13Shift
 #from day07_signal.Day07Signal import Day07Signal
@@ -14,7 +14,7 @@
 #from easter01_day01_rot13_shift.easter01_day01_rot13_shift import Easter01Rot13Shift
 #from day09_hexmax.Day09Hexmax import Day09Hexmax
 #from day11_sqlite_md5_sum_changed.Day11SqliteMd5SumChanged import Day11SqliteMd5SumChanged
-from easter01_day01_rot13_shift.easter01_day01_rot13_shift import Easter01Rot13Shift
+#from easter01_day01_rot13_shift.easter01_day01_rot13_shift import Easter01Rot13Shift
 
 
 class Main:
@@ -32,4 +32,4 @@ class Main:
     #day08 = Day08ASN1()
     #day09 = Day09Hexmax()
     #day11 = Day11SqliteMd5SumChanged()
-    easter01 = Easter01Rot13Shift();
+    #easter01 = Easter01Rot13Shift();
