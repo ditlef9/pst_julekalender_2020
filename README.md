@@ -201,7 +201,7 @@ Tabellene hadde fornavn, etternavn og md5-sum. En av md5-summene var feil, vi sk
 
 
 **Løsning:**<br />
-Kjør checkpoint først på databasen, for å få den til å bli synkronisert:<br />
+Kjør checkpoint først på databasen, for å få den til å bli synkronisert. Dette gjøres ved å kjøre følgende spørringer:<br />
 *PRAGMA wal_autocheckpoint = 0<br />
 PRAGMA wal_checkpoint(PASSIVE)*<br /><br />
 
