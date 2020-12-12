@@ -296,3 +296,21 @@ Skriv deretter ut alle radene i begge tabellene og kjør md5 på fornavn etterna
 **Svar:**<br />
 PST{49422712408d5409a3e40945204314e6}
 
+---
+## Luke 12 - Slede8 Reverse engineering
+
+**Oppgave:**<br />
+I dag fikk vi et program "program.s8" som er eksportert ut fra slede8.npst.no <br />
+https://github.com/PSTNorge/slede8/
+
+
+
+**Løsning:**<br />
+Last ned og installer Visual Studio fra https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16<br />
+Checkout prosjektet fra https://github.com/PSTNorge/slede8 i Visual Studio<br />
+
+
+
+**Svar:**<br />
+
+
