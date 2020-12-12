@@ -29,7 +29,7 @@ ROT24 gir løsningen
 PST{HeiHoNåErDetJulIgjen}
 
 ---
-## 🥚 Egg 1 fra luke 1 🥚 - ???
+## 🥚 Luke 1 - Egg nr 1 🥚 - ???
 
 **Oppgave:**<br />
 ?
@@ -70,7 +70,7 @@ Last opp bildet og velg Forbedre flere ganger<br />
 PST{HuskMeteren}
 
 ---
-## 🥚 Egg 2 fra luke 3 🥚 - Slede8 bonus
+## 🥚 Luke 3 - Egg nr 2 🥚 - Slede8 bonus
 
 **Oppgave:**<br />
 I en zip-fil hadde vi fått en mystisk fil som het kladd.txt. Den startet med åtte emojier av sleder:<br />
@@ -107,6 +107,17 @@ Til slutt skulle man summere antall tallet (antall dager).
 PST{999159}
 
 
+---
+## 🥚 Luke 4 - Egg nr 3 🥚 - SQL
+
+**Oppgave:**<br />
+?
+
+**Løsning:**<br />
+?
+
+**Svar:**<br />
+?
 
 ---
 ## Luke 5 - Logg.csv passordbyttefil
@@ -125,7 +136,7 @@ PST{879502f267ce7b9913c1d1cf0acaf045}
 
 
 ---
-## 🥚 Egg 5 fra luke 4 🥚 - Medarbeiderundersøkelse
+## 🥚 Luke 5 - Egg nr 4 🥚 - Medarbeiderundersøkelse
 
 **Oppgave:**<br />
 I innboksen ligger det en e-post fra HR. <br />
@@ -157,7 +168,7 @@ Løs Manuell 4032996b1bbb67f6<br />
 PST{ATastyByteOfSled}
 
 ---
-## 🥚 Egg 5 fra luke 5 🥚 - Slede8 Hello World
+## 🥚 Luke 6 - Egg nr 5 🥚 - Slede8 Hello World
 
 **Oppgave:**<br />
 Gå til http://slede8.npst.no og løs e-læring Hello World. <br />
@@ -249,7 +260,7 @@ PST{++AndKissesWillBeAwardedToYou}
 
 
 ---
-## 🥚 Egg 5 fra luke 6 🥚 - Slede8 A+B
+## 🥚 Luke 10 - Egg nr 7 🥚 - Slede8: A+B
 
 **Oppgave:**<br />
 Gå til http://slede8.npst.no og løs E-læring 8e7c9876c85e5471. <br />
