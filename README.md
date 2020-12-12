@@ -29,16 +29,19 @@ ROT24 gir løsningen
 PST{HeiHoNåErDetJulIgjen}
 
 ---
-## Luke 1 - Egg nr 1 🥚 - ???
+## Luke 1 - Egg nr 1 🥚 - humans.txt
 
 **Oppgave:**<br />
-?
+På nettsiden så finnes det både robots.txt og humans.txt:<br />
+https://dass.npst.no/robots.txt<br />
+https://dass.npst.no/humans.txt<br />
 
 **Løsning:**<br />
-??
+Åpne https://dass.npst.no/humans.txt<br />
+Søk etter "egg".
 
 **Svar:**<br />
-??
+EGG{sh4rks_d0t_txt}
 
 ---
 
@@ -310,8 +313,15 @@ FUNKER IKKE...<br />
 Last ned Nodejs og installer https://nodejs.org/en/<br />
 Last ned Visual Studio Community og installer https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16<br />
 Åpne "x64 Native Tools Command Prompt for VS 2019" og skriv: *npm install -g typescript*<br />
+*npm install rollup --save-dev*<br />
 Åpne Visual Studio Installer og installer Visual Studio Community (uten workload)<br />
-Checkout prosjektet fra https://github.com/PSTNorge/slede8 i Visual Studio<br />
+Checkout prosjektet fra https://github.com/PSTNorge/slede8 i Visual Studio<br /><br />
+
+Åpne cmd og skriv kommandoene:<br />
+cd C:\Users\user\source\repos\slede8<br />
+npm install<br />
+npm run build<br />
+
 
 
 

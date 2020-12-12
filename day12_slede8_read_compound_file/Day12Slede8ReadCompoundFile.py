@@ -39,9 +39,13 @@ class Day12Slede8ReadCompoundFile:
             char = char.replace("x", "")
             bytes = bytes + char;
         x = x +1
+    print("\nx=" + str(x))
 
     # Print bytes
     print("\n\n(2) Print bytes:")
     bytes_split = bytes.split('\\')
+    x = 0
     for byte in bytes_split:
         print(byte, end=" ")
+        x = x +1
+    print("\nx=" + str(x))
