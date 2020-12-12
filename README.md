@@ -17,7 +17,7 @@ The solution is programmed in Python.
 Go to main.py and click Shift+F10 to run code.
 
 ---
-## Dag 1
+## Dag 1 - ROT24
 
 **Oppgave:**<br />
 RUV{JgkJqPåGtFgvLwnKilgp}
@@ -29,7 +29,7 @@ ROT24 gir løsningen
 PST{HeiHoNåErDetJulIgjen}
 
 ---
-## Dag 2
+## Dag 2 - Midi fil med hemmelig beskjed
 
 **Oppgave:**<br />
 Etteretningsoffiseren GWYN, Pen ble stoppet i tollen ved utreise den 25. november. Vi sikret i den forbindelse et lagringsmidie som inneholdt en mystisk fil. Kan du analysere filen pen_gwyn_greatest_hits.mid?<br />
@@ -45,7 +45,7 @@ ABCDEFGHIJKLMNOPQRSPST{BabyPenGwynDuhDuhDuhDuhDuhDuh}TSRQPONMLKJIHGFEDCBA@?>=\
 
 
 ---
-## Dag 3
+## Dag 3 - Cupkake.png bildeforbedring CSI-style
 
 **Oppgave:**<br />
 Man får et bilde cupkake.png som skal forbedres.
@@ -59,7 +59,7 @@ Last opp bildet og velg Forbedre flere ganger<br />
 PST{HuskMeteren}
 
 ---
-## Dag 4
+## Dag 4 - Database med dager siden påske
 
 **Oppgave:**<br />
 Det ble gitt en databasefil som skulle regne ut 
@@ -81,7 +81,7 @@ PST{999159}
 
 
 ---
-## Dag 5
+## Dag 5 - Logg.csv passordbyttefil
 
 **Oppgave:**<br />
 Det ble gitt en loggfil (log.csv) hvor brukere hadde endret passordet sitt.
@@ -98,7 +98,7 @@ PST{879502f267ce7b9913c1d1cf0acaf045}
 
 
 ---
-## Dag 6
+## Dag 6 - Slede8
 
 **Oppgave:**<br />
 PST har laget et program som heter slede8. Det kan ses her: http://slede8.npst.no.
@@ -114,7 +114,7 @@ Løs Manuell 4032996b1bbb67f6<br />
 PST{ATastyByteOfSled}
 
 ---
-## Dag 7
+## Dag 7 - complex16u radiosignal
 
 **Oppgave:**<br />
 Syvende luke var et signal som var gitt i filformatet "data.complex16u". Vi skal finne hemmelig beskjed i signalet.
@@ -129,7 +129,7 @@ PST{0n_0ff_k3y1ng_1s_34sy!}
 
 
 ---
-## Dag 8
+## Dag 8 - ASN1I
 
 **Oppgave:**<br />
 Denne dagen fikk man en fil som het "ASN.1 spec". Det er skrevet i språket ANS.1.  Koden vi fikk var:<br />
@@ -150,3 +150,25 @@ Les løsningen fra bunn til topp.
 
 **Svar:**<br />
 PST{ASN1IChooseYou}
+
+
+
+---
+## Dag 9 - Hexmax - Hex/16 Emoji replace
+
+**Oppgave:**<br />
+Man ble presentert med to linjer emoji. Den første linjen var 16 unike emoji og representerer alfabetet. Den andre er en kodet beskjed.<br />
+🎅🤶❄⛄🎄🎁🕯🌟✨🔥🥣🎶🎆👼🦌🛷<br /><br />
+
+🤶🛷✨🎶🎅✨🎅🎅🛷🤶🎄🔥🎆🦌🎁🛷🎅❄🛷🛷🎅🎶🎅✨🎅🦌🥣🔥🛷🦌⛄🎅🌟🛷🛷🔥🎄🦌🎅✨🦌🦌🕯🎶🎅🤶🦌❄🎁🕯🎅✨🎶👼🌟🎆🕯🌟❄👼🎅🎅🤶❄🎄👼🎆🔥🎁🛷🤶👼🎅🎅🎅🎅🎅🎅
+
+
+
+**Løsning:**<br />
+Les inn den første linjen som hex, fra 0-F. Du skal da ha Nisse=0, Nissemor=1, Snøkrystall=2, ..., Slede=F<br />
+Bruk mappingen og konverter alle emoji i beskjeden om til hex, du skal da sitte igjen med koden:<br />
+*1F8B0800F149CE5F02FF0B080EA9FE307FF94E08EE6B01E25608BD7C672D00124DC95F1D000000*<br />
+Starten på hex filen, 1F8B08, sier at dette er en zip-fil. <br />
+Åpne HxD eller annen hex editor, lim inn koden og lagre som solution.gz. Åpne solution.gz i WinRar. Du skal da få løsningen.
+
+**Svar:**<br />
