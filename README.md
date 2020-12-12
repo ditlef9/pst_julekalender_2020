@@ -306,7 +306,9 @@ https://github.com/PSTNorge/slede8/
 
 
 **Løsning:**<br />
-Last ned og installer Visual Studio fra https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16<br />
+Last ned Nodejs: https://nodejs.org/en/<br />
+Åpne Node.js og skriv: *npm install -g typescript*
+Last ned Visual Studio: https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16<br />
 Checkout prosjektet fra https://github.com/PSTNorge/slede8 i Visual Studio<br />
 
 
