@@ -17,7 +17,7 @@ The solution is programmed in Python.
 Go to main.py and click Shift+F10 to run code.
 
 ---
-## Dag 1 - ROT24
+## Luke 1 - ROT24
 
 **Oppgave:**<br />
 RUV{JgkJqPåGtFgvLwnKilgp}
@@ -29,7 +29,7 @@ ROT24 gir løsningen
 PST{HeiHoNåErDetJulIgjen}
 
 ---
-## Dag 2 - Midi fil med hemmelig beskjed
+## Luke 2 - Midi fil med hemmelig beskjed
 
 **Oppgave:**<br />
 Etteretningsoffiseren GWYN, Pen ble stoppet i tollen ved utreise den 25. november. Vi sikret i den forbindelse et lagringsmidie som inneholdt en mystisk fil. Kan du analysere filen pen_gwyn_greatest_hits.mid?<br />
@@ -45,7 +45,7 @@ ABCDEFGHIJKLMNOPQRSPST{BabyPenGwynDuhDuhDuhDuhDuhDuh}TSRQPONMLKJIHGFEDCBA@?>=\
 
 
 ---
-## Dag 3 - Cupkake.png bildeforbedring CSI-style
+## Luke 3 - Cupkake.png bildeforbedring CSI-style
 
 **Oppgave:**<br />
 Man får et bilde cupkake.png som skal forbedres.
@@ -59,7 +59,7 @@ Last opp bildet og velg Forbedre flere ganger<br />
 PST{HuskMeteren}
 
 ---
-## Dag 4 - Database med dager siden påske
+## Luke 4 - Database med dager siden påske
 
 **Oppgave:**<br />
 Det ble gitt en databasefil som skulle regne ut 
@@ -81,7 +81,7 @@ PST{999159}
 
 
 ---
-## Dag 5 - Logg.csv passordbyttefil
+## Luke 5 - Logg.csv passordbyttefil
 
 **Oppgave:**<br />
 Det ble gitt en loggfil (log.csv) hvor brukere hadde endret passordet sitt.
@@ -98,7 +98,7 @@ PST{879502f267ce7b9913c1d1cf0acaf045}
 
 
 ---
-## Dag 6 - Slede8
+## Luke 6 - Slede8
 
 **Oppgave:**<br />
 PST har laget et program som heter slede8. Det kan ses her: http://slede8.npst.no.
@@ -129,7 +129,7 @@ PST{0n_0ff_k3y1ng_1s_34sy!}
 
 
 ---
-## Dag 8 - ASN1I
+## Luke 8 - ASN1I
 
 **Oppgave:**<br />
 Denne dagen fikk man en fil som het "ASN.1 spec". Det er skrevet i språket ANS.1.  Koden vi fikk var:<br />
@@ -154,7 +154,7 @@ PST{ASN1IChooseYou}
 
 
 ---
-## Dag 9 - Hexmax - Hex/16 Emoji replace
+## Luke 9 - Hexmax - Hex/16 Emoji replace
 
 **Oppgave:**<br />
 Man ble presentert med to linjer emoji. Den første linjen var 16 unike emoji og representerer alfabetet. Den andre er en kodet beskjed.<br />
@@ -172,3 +172,42 @@ Starten på hex filen, 1F8B08, sier at dette er en zip-fil. <br />
 Åpne HxD eller annen hex editor, lim inn koden og lagre som solution.gz. Åpne solution.gz i WinRar. Du skal da få løsningen.
 
 **Svar:**<br />
+PST{🧹🧹🎄🎅🎄🧹}
+
+
+---
+## Luke 10 - Slede8 (A + B) mod 256 som en ASCII-streng
+
+**Oppgave:**<br />
+På https://slede8.npst.no/ så skulle vi legge inn e-læringskode 82ec70284b51eb12 som ga følgende oppgave:<br />
+Slede8 (A + B) mod 256.<br />
+Slede 8 har ikke modolu, gange eller dele. Men det har pluss, minus og mindre enn.
+
+
+**Løsning:**<br />
+......
+
+**Svar:**<br />
+PST{++AndKissesWillBeAwardedToYou}
+
+
+---
+## Luke 11 - SQLite database med md5 sum av fornavn og etternavn
+
+**Oppgave:**<br />
+Vi fikk en databasefil liste.db samt to andre småfiler. Databasefilen kan åpnes i DB Browser for SQLite. <br />
+Tabellene hadde fornavn, etternavn og md5-sum. En av md5-summene var feil, vi skulle finne hvilken. 
+
+
+
+**Løsning:**<br />
+Kjør checkpoint først på databasen, for å få den til å bli synkronisert:<br />
+*PRAGMA wal_autocheckpoint = 0<br />
+PRAGMA wal_checkpoint(PASSIVE)*<br /><br />
+
+Skriv deretter ut alle radene i begge tabellene og kjør md5 på fornavn etternavn. Skriv ut den linjen som ikke matchet. 
+
+
+**Svar:**<br />
+...
+
