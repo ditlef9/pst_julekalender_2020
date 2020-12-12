@@ -22,6 +22,7 @@ class Day12Slede8ReadCompoundFile:
     print('Specification: https://github.com/PSTNorge/slede8/blob/main/src/assembler.ts')
     print('Specification: https://github.com/PSTNorge/slede8/blob/main/src/runtime.ts')
 
+
     # Read file as hex
     read_file = repr(open("./day12_slede8_read_compound_file/program.s8", 'rb').read())
 
