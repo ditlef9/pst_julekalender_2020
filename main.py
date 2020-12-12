@@ -4,7 +4,7 @@
 
 #from day01_rot24.day01 import Day01
 #from day02_character_picking.day02 import Day02
-#from day04_database.day04 import Day04
+#from day04_database_maaltall.day04 import Day04
 #from day05_easter04_medarbeiderundersokelse.day05_easter04_medarbeiderundersokelse import Day05Medarbeiderundersokelse
 #from day05_dokumentasjonsvelvet.day05_dokumentasjonsvelvet import Day05Dokumentasjonsvelvet
 #from day03_easter02_kladd.Easter02Day03Kladd import Day03Kladd
