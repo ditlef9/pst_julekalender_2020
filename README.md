@@ -29,7 +29,7 @@ ROT24 gir løsningen
 PST{HeiHoNåErDetJulIgjen}
 
 ---
-## 🥚 Egg 1 🥚 - ???
+## 🥚 Egg 1 fra luke 1 🥚 - ???
 
 **Oppgave:**<br />
 ?
@@ -70,7 +70,7 @@ Last opp bildet og velg Forbedre flere ganger<br />
 PST{HuskMeteren}
 
 ---
-## 🥚 Egg 2 🥚 - ???
+## 🥚 Egg 2 fra luke 3 🥚 - Slede8 bonus
 
 **Oppgave:**<br />
 I en zip-fil hadde vi fått en mystisk fil som het kladd.txt. Den startet med åtte emojier av sleder:<br />
@@ -124,6 +124,21 @@ Se etter linjen hvor navn og fult navn ikke stemmer:<br />
 PST{879502f267ce7b9913c1d1cf0acaf045} 
 
 
+---
+## 🥚 Egg 5 fra luke 4 🥚 - Medarbeiderundersøkelse
+
+**Oppgave:**<br />
+I innboksen ligger det en e-post fra HR. <br />
+*Det er fortsatt mulig å svare på årets medarbeiderundersøkelse:<br />
+Skryt meg gjerne opp i skyene, slik at jeg fremstår som en god mellomleder!<br />
+Det gjør ved å sende meg en melding til HR med teksten EGG{w0rlds_b3st_b0ss}.*<br />
+
+
+**Løsning:**<br />
+Send svar til HR.
+
+**Svar:**<br />
+EGG{w0rlds_b3st_b0ss}
 
 ---
 ## Luke 6 - Slede8
@@ -140,6 +155,20 @@ Løs Manuell 4032996b1bbb67f6<br />
 
 **Svar:**<br />
 PST{ATastyByteOfSled}
+
+---
+## 🥚 Egg 5 fra luke 5 🥚 - Slede8 Hello World
+
+**Oppgave:**<br />
+Gå til http://slede8.npst.no og løs e-læring Hello World. <br />
+
+
+**Løsning:**<br />
+Løs e-læring Hello World
+
+**Svar:**<br />
+EGG{Hello, SLEDE8!}
+
 
 ---
 ## Dag 7 - complex16u radiosignal
@@ -217,6 +246,21 @@ Slede 8 har ikke modolu, gange eller dele. Men det har pluss, minus og mindre en
 
 **Svar:**<br />
 PST{++AndKissesWillBeAwardedToYou}
+
+
+---
+## 🥚 Egg 5 fra luke 6 🥚 - Slede8 A+B
+
+**Oppgave:**<br />
+Gå til http://slede8.npst.no og løs E-læring 8e7c9876c85e5471. <br />
+
+
+**Løsning:**<br />
+Se Day_10_easter_slede8.txt<br />
+Send egget til HR i mail.
+
+**Svar:**<br />
+EGG{ba92ae3a9af1a157703ca83d9a9fb11d}
 
 
 ---
