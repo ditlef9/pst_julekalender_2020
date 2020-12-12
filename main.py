@@ -13,8 +13,9 @@
 #from day08_asn_1_spec.Day08ASN1 import Day08ASN1
 #from day01_easter01_rot13_shift.day01_easter01_rot13_shift import Easter01Rot13Shift
 #from day09_hexmax.Day09Hexmax import Day09Hexmax
-from day11_sqlite_md5_sum_changed.Day11SqliteMd5SumChanged import Day11SqliteMd5SumChanged
+#from day11_sqlite_md5_sum_changed.Day11SqliteMd5SumChanged import Day11SqliteMd5SumChanged
 #from day01_easter01_rot13_shift.day01_easter01_rot13_shift import Easter01Rot13Shift
+from day12_slede8_read_compound_file.Day12Slede8ReadCompoundFile import Day12Slede8ReadCompoundFile
 
 
 class Main:
@@ -33,3 +34,4 @@ class Main:
     #day09 = Day09Hexmax()
     #day11 = Day11SqliteMd5SumChanged()
     #easter01 = Easter01Rot13Shift();
+    Day12 = Day12Slede8ReadCompoundFile()
