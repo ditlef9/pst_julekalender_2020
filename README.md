@@ -127,3 +127,26 @@ complex16u er et radiosignal som kan åpnes med programmet Universal Radio Hacke
 **Svar:**<br />
 PST{0n_0ff_k3y1ng_1s_34sy!}
 
+
+---
+## Dag 8
+
+**Oppgave:**<br />
+Denne dagen fikk man en fil som het "ASN.1 spec". Det er skrevet i språket ANS.1.  Koden vi fikk var:<br />
+MIIBOTCCATAwggEnMIIBHjCCARUwggEMMIIBAzCB+zCB8zCB6zCB4zCB2zCB0zCByzCBwzCBuzCBszCBqzCBozCBnDCBlDCBjDCBhDB9MHYwbzBoMGEwWjBTMEwwRTA+MDcwMTAqMCMwHDAVMA4wBwUAoQMCAROgAwIBA6EDAgEMogMCAQChAwIBE6ADAgEBoQMCARKkAgUAoQMCARShAwIBDqIDAgEYoQMCAQShAwIBEqEDAgEOoQMCAQ6hAwIBB6IDAgECogMCAQigAwIBAaIDAgENogMCARKiAwIBAKMCBQCiAwIBE6IDAgESogMCAQ+hAwIBEaEDAgEOoQMCAQugAwIBAKIDAgEDoQMCAQyhAwIBFKEDAgESoQMCAQ+gAwIBAaEDAgEMoAMCAQOhAwIBEaEDAgEOogMCAQs=
+
+**Løsning:**<br />
+Åpne https://holtstrom.com/michael/tools/asn1decoder.php og dekod koden.<br />
+Hvis man åpner filen "ASN.1 spec" så ser man at hvert enkelt array betyr noe:<br />
+[0] digit<br />
+[1] lower case alphabet<br />
+[2] upper case alphabet<br />
+[3] leftCurlyBracket<br />
+[3] rightCurlyBracket<br /><br />
+Bruk dekodet kode (SEQUENCE) for å finne løsningen, f.eks.:<br />
+[1] {INTEGER 0x13 (19 decimal) } er lower case alphabet index 19 som betyr t.")<br />
+    print("[0] {INTEGER 0x03 (3 decimal) } er lower digit index 3 som betyr 3.")<br />
+    
+
+**Svar:**<br />
+x
