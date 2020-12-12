@@ -39,7 +39,9 @@ PST{HeiHoNåErDetJulIgjen}
 
 **Svar:**<br />
 ??
+
 ---
+
 ## Luke 2 - Midi fil med hemmelig beskjed
 
 **Oppgave:**<br />
