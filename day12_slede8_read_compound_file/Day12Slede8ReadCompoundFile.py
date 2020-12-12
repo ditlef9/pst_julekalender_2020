@@ -12,13 +12,15 @@
 #   Se vedlagt fil for den monterte koden. Tastefinger mente det var relevant å fortelle at du kan finne nyttige verktøy her:
 #   https://github.com/PSTNorge/slede8
 #
-# Bytes specification: https://github.com/PSTNorge/slede8/blob/main/src/assembler.ts
+# Bytes specification:  https://github.com/PSTNorge/slede8/blob/main/src/assembler.ts
+#                       https://github.com/PSTNorge/slede8/blob/main/src/runtime.ts
 #
 
 class Day12Slede8ReadCompoundFile:
     print('')
     print('~~~~~~~~~~~~~~~~~~~~~~~~ Day 12 ~~~~~~~~~~~~~~~~~~~~~~~~')
     print('Specification: https://github.com/PSTNorge/slede8/blob/main/src/assembler.ts')
+    print('Specification: https://github.com/PSTNorge/slede8/blob/main/src/runtime.ts')
 
     # Read file as hex
     read_file = repr(open("./day12_slede8_read_compound_file/program.s8", 'rb').read())

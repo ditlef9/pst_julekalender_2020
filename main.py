@@ -15,6 +15,8 @@
 #from day09_hexmax.Day09Hexmax import Day09Hexmax
 #from day11_sqlite_md5_sum_changed.Day11SqliteMd5SumChanged import Day11SqliteMd5SumChanged
 #from day01_easter01_rot13_shift.day01_easter01_rot13_shift import Easter01Rot13Shift
+#from day12_slede8_read_compound_file.Day12Slede8ReadCompoundFile import Day12Slede8ReadCompoundFile
+#from day01_easter01_rot13_shift.easter01_day01_rot13_shift import Easter01Rot13Shift
 from day12_slede8_read_compound_file.Day12Slede8ReadCompoundFile import Day12Slede8ReadCompoundFile
 
 
