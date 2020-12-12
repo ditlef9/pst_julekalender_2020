@@ -29,6 +29,17 @@ ROT24 gir løsningen
 PST{HeiHoNåErDetJulIgjen}
 
 ---
+## 🥚 Egg 1 🥚 - ???
+
+**Oppgave:**<br />
+?
+
+**Løsning:**<br />
+??
+
+**Svar:**<br />
+??
+---
 ## Luke 2 - Midi fil med hemmelig beskjed
 
 **Oppgave:**<br />
@@ -57,6 +68,23 @@ Last opp bildet og velg Forbedre flere ganger<br />
 
 **Svar:**<br />
 PST{HuskMeteren}
+
+---
+## 🥚 Egg 2 🥚 - ???
+
+**Oppgave:**<br />
+I en zip-fil hadde vi fått en mystisk fil som het kladd.txt. Den startet med åtte emojier av sleder:<br />
+🛷🛷🛷🛷🛷🛷🛷🛷 <br />
+Fulgt av en lang kode.
+
+**Løsning:**<br />
+Åpne http://slede8.npst.no<br />
+På toppen av URL skriv inn # fulgt av koden:<br />
+https://slede8.npst.no/#N4Igzg9grgTgxgUwMIQCYJALhAZQKIAqBABDAIwA0xADAB5kA6AdgGo4DSAkgGInlXlm+IqWpUAbAE4h7AEqcWo5gAkA8gAV1NWgCYEzZgAsAtsczMAdABEAggRvaALI4p1xAVle0ECLwA4Adi8AI3F-MTpUSjpHXzoAQy9HRMiAMy9JVMtbe214iNp3VC8AnS94sro-AGYMuNpJTzoEJtpUAtQwhJSGnWy7BzoA+tS4ENq6auCQ9Lp3aO9phPqEYqrK+jG6HUcDJnUAGQBVHBxRAUYmDnlFGGoZG6Urwj4xbQDgh4UngiPZYjAAE9UAAHCAAGwQTGYhxOZzuFy+t3u0KuBA06j2QNBEKh5meInILiewj4ZE8pEuzG4nAAcrTiCZjMwABp4A4HPD-GBlUh9Al8Cl0KlMCDGADWADdVvjOfDqswDjYcHxdkw2RyuaRaqQ1YrOOw+QIFUwAEJqTTEMFgAAu4KgqAAllBmVc5N8YCbYadzqR3CoMcQxVLVntrXaHc6zEIXr6iTHCZRKf6mLJCH89swQBQQI6mCCoDasCAyKVJPFgnBqqkpn5JI5quJxMEdAF4qka3B5sEyKh2u1EHBm2RJJJgn50KkAtQ4JIdKgdO5hhUdH4fGQaj4PDsQABfIA<br />
+Trykk "Løp" og velg Aa i Oppgulp.
+
+**Svar:**<br />
+EGG{SLEDE8ExampleForSPSTInternalUseOnly}
 
 ---
 ## Luke 4 - Database med dager siden påske
@@ -209,5 +237,5 @@ Skriv deretter ut alle radene i begge tabellene og kjør md5 på fornavn etterna
 
 
 **Svar:**<br />
-...
+PST{49422712408d5409a3e40945204314e6}
 
