@@ -145,8 +145,8 @@ Hvis man åpner filen "ASN.1 spec" så ser man at hvert enkelt array betyr noe:<
 [3] rightCurlyBracket<br /><br />
 Bruk dekodet kode (SEQUENCE) for å finne løsningen, f.eks.:<br />
 [1] {INTEGER 0x13 (19 decimal) } er lower case alphabet index 19 som betyr t.")<br />
-    print("[0] {INTEGER 0x03 (3 decimal) } er lower digit index 3 som betyr 3.")<br />
-    
+print("[0] {INTEGER 0x03 (3 decimal) } er lower digit index 3 som betyr 3.")<br /><br />
+Les løsningen fra bunn til topp.
 
 **Svar:**<br />
-x
+PST{ASN1IChooseYou}
