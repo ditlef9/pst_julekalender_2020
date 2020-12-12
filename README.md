@@ -94,3 +94,36 @@ Se etter linjen hvor navn og fult navn ikke stemmer:<br />
 
 **Svar:**<br />
 PST{879502f267ce7b9913c1d1cf0acaf045} 
+
+
+
+---
+## Dag 6
+
+**Oppgave:**<br />
+PST har laget et program som heter slede8. Det kan ses her: http://slede8.npst.no.
+Inne på programmet skal man ta "E-læring" Hei Verden, Enkel addisjon og Manuell 4032996b1bbb67f6.
+
+
+**Løsning:**<br />
+Løs Hei Verden <br />
+Løs Enkel addisjon<br />
+Løs Manuell 4032996b1bbb67f6<br />
+
+**Svar:**<br />
+PST{ATastyByteOfSled}
+
+---
+## Dag 7
+
+**Oppgave:**<br />
+Syvende luke var et signal som var gitt i filformatet "data.complex16u". Vi skal finne hemmelig beskjed i signalet.
+
+
+**Løsning:**<br />
+complex16u er et radiosignal som kan åpnes med programmet Universal Radio Hacker.<br />
+Åpne signalet og velg ASCII. Løsningen kommer opp med en gang.
+
+**Svar:**<br />
+PST{0n_0ff_k3y1ng_1s_34sy!}
+
