@@ -75,7 +75,7 @@ Last opp bildet og velg Forbedre flere ganger<br />
 PST{HuskMeteren}
 
 ---
-## uke 3 - Egg nr 2 🥚 - Slede8 bonus
+## Luke 3 - Egg nr 2 🥚 - Slede8 bonus
 
 **Oppgave:**<br />
 I en zip-fil hadde vi fått en mystisk fil som het kladd.txt. Den startet med åtte emojier av sleder:<br />
@@ -113,7 +113,7 @@ PST{999159}
 
 
 ---
-## Luke 4 - Egg nr 3 🥚 - SQL
+## Luke 4 - Egg nr 3 🥚 - SQL eller cupkake.png
 
 **Oppgave:**<br />
 ?
