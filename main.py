@@ -18,6 +18,7 @@
 #from day12_slede8_read_compound_file.Day12Slede8ReadCompoundFile import Day12Slede8ReadCompoundFile
 #from day01_easter01_rot13_shift.easter01_day01_rot13_shift import Easter01Rot13Shift
 from day12_slede8_read_compound_file.Day12Slede8ReadCompoundFile import Day12Slede8ReadCompoundFile
+from day12_slede8_read_compound_file.Day12Slede8ReadCompoundFileSolve import Day12Slede8ReadCompoundFileSolve
 
 
 class Main:
@@ -37,3 +38,5 @@ class Main:
     #day11 = Day11SqliteMd5SumChanged()
     #easter01 = Easter01Rot13Shift();
     Day12 = Day12Slede8ReadCompoundFile()
+    Day12Solve = Day12Slede8ReadCompoundFileSolve()
+

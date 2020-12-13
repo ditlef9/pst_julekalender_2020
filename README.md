@@ -303,28 +303,15 @@ PST{49422712408d5409a3e40945204314e6}
 ## Luke 12 - Slede8 Reverse engineering
 
 **Oppgave:**<br />
-I dag fikk vi et program "program.s8" som er eksportert ut fra slede8.npst.no <br />
+I dag fikk vi et program "program.s8" som er eksportert ut fra slede8.npst.no<br />
 https://github.com/PSTNorge/slede8/
 
 
-
 **Løsning:**<br />
-FUNKER IKKE...<br />
-Last ned Nodejs og installer https://nodejs.org/en/<br />
-Last ned Visual Studio Community og installer https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16<br />
-Åpne "x64 Native Tools Command Prompt for VS 2019" og skriv: *npm install -g typescript*<br />
-*npm install rollup --save-dev*<br />
-Åpne Visual Studio Installer og installer Visual Studio Community (uten workload)<br />
-Checkout prosjektet fra https://github.com/PSTNorge/slede8 i Visual Studio<br /><br />
-
-Åpne cmd og skriv kommandoene:<br />
-cd C:\Users\user\source\repos\slede8<br />
-npm install<br />
-npm run build<br />
-
-
-
+Reverse engineer med utgangspunkt i koden https://github.com/PSTNorge/slede8/blob/main/src/runtime.ts<br />
+Løsningen er å se etter XOR på 0x38, som gir en Fibonacci sekvens.
 
 **Svar:**<br />
+PST{fib0nacc1_0net1m3_p4d}
 
 
