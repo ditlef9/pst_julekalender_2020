@@ -303,39 +303,15 @@ PST{49422712408d5409a3e40945204314e6}
 ## Luke 12 - Slede8 Reverse engineering
 
 **Oppgave:**<br />
-I dag fikk vi et program "program.s8" som er eksportert ut fra slede8.npst.no <br />
+I dag fikk vi et program "program.s8" som er eksportert ut fra slede8.npst.no<br />
 https://github.com/PSTNorge/slede8/
 
 
-
 **Løsning:**<br />
-FUNKER IKKE...<br />
-Last ned Nodejs og installer https://nodejs.org/en/<br />
-Last ned Visual Studio Community og installer https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16<br />
-Åpne "x64 Native Tools Command Prompt for VS 2019" og skriv: *npm install -g typescript*<br />
-*npm install rollup --save-dev*<br />
-Åpne Visual Studio Installer og installer Visual Studio Community (uten workload)<br />
-Checkout prosjektet fra https://github.com/PSTNorge/slede8 i Visual Studio<br /><br />
-
-Åpne cmd og skriv kommandoene:<br />
-cd C:\Users\user\source\repos\slede8<br />
-npm install<br />
-npm run build<br /><br />
-
-Åpne cmd og kjør programmet:<br />
-cd C:\Users\user\source\repos\slede8\lib<br />
-node index.js<br />
-
-Da skal du kunne klare å få ut minnet:<br />
-Sindre:pc=81,97,1,194,161,194,177,1,195,129,194,131,3,194,145,26,6,2,4,3,114,5,85,103,37,114,37,50,21,44,82,6,98,7,101,194,185,85,194,176,23,194,169,195,169,7,194,172,41,3,194,179,5,26,6,35,5,26,6,81,81,87,126,110,100,119,18,89,56,195,179,194,138,72,61,195,171,83,125,33,194,175,28,194,174,80,37,85,63,75,111,114,114,101,107,116,33,70,101,105,108,33,4,2,7,194,162,195,153,6,22,2,85,194,176,24,6,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0<br /><br />
-
-Åpne Slede8 program:<br />
-https://slede8.npst.no#N4Igzg9grgTgxgUwMIQCYJALhAHQHb4DKAogCqkAEMAjAAwA0FtRZlN1j1++AcgPIAFYr0HC8-IRQDcFAA4BTingRgALggoAbAJZ4AVhoQwK6VRQRnZUPAGszq7ZvOr1MVQENbCAITdxoihEhP1IAVQAlCjAbGG0ANwB9AAtHMAQ8aQobd01NIwoAcgAzaxswPQhlPAKomPjk1PT8MMj01BgEBKKAD5g1ToAjCDKPRIdNBLAAW3kEuKMwHKNmiNrYxJTNNII8QlJBAT90hJ11PAat9Mx8ADoAEQBBUgeKAA4OAE4AdnoOag+ACy-ABsf0Bvy+PzBAFZfgAmD6-cHUADMHBRSKB1ABsLhwPo+Lh9CBGOo2PosNesLoGJRUPJdIpDDhHABQNeRPxH1e9ChtDBWKp9CF-yxX0JpORwMR-2p0t5mIhRIB6MV1C+iNx+PxKNhWoJwo472FULxvzov1oDDJMp5r01+NlEJlyJRPK+nJhEKNpLhsJRkrFuJ5ooh7IYjKFwIxX2pZPNWPJdD+tHpOpj1v5luptB5AeJ9CJUKlRKd1GhGMJRKJIuR4sLQMdHAYLforfbbc77b8+Gi6wu22ueAAYgBJHg8cznU7HTbbTJ9+IUdyodoqefjLTuAYIPIZArHGfnOfpGqbmC0CgQADmVC4O0XiWU-TmRlQ2iHABkHnsqHCKABgGZJo7hqBQ8wwO+6RRBAUwUAMOjGLICB2HIii6Bk2h-vgn6jgA0n+jA0JeAEyEkcTaGA4Fvto0H5DoNhMMucRgJoUAuPkFH4AAQgAEgcaz1Ce5wlLkPRuEQeHhKOABq2F4AIn6hIQhBUAwd7UMBCDXremnnuprHaIx7hmBRSiKMhNj5AoSgqOo1GQVhWGoCZ7hNBkQGeUBMh8NxhDeBQ5GUeBWHXnovQmBY9k3mpFDXvIxhFDA7hMAAHsOw4ALQAHy0KlVoUDMIVyGxYBpGhFD3l51WZFhHTXpRrgWHeAEABR5RlFAANRpfyFAALxpXQtAAJQ3BQdzNUk8h4KgTVUUZVmBcseD8QIAiCU+dmdBB75+I+A7HKJmjiaoQ7hGQEQ9jsbQdF0vQvkMIzuGMjiTDMr59EsMBDmOE5Tic2hnIdOzfr+MD-jVMgQwNFAehQrUFLxBQjSw5BUBiaVwiRmT4IpymqRDREot5f6wwUSQFDhDwAOKRDDUObQ5UGYWT4wDO4S2biuHRldBkBwReV63jQcgodZ8j4BdLTXSA9AgLoViqFgIAgAAvkAA
-
-<br /><br />
-I nettleseren velg Consoll på siden. Legg så denne koden inn:<br />
-localStorage.setItem('🚲', 10000) <br />
+Reverse engineer med utgangspunkt i koden https://github.com/PSTNorge/slede8/blob/main/src/runtime.ts<br />
+Løsningen er å se etter XOR på 0x38, som gir en Fibonacci sekvens.
 
 **Svar:**<br />
+PST{fib0nacc1_0net1m3_p4d}
 
 
