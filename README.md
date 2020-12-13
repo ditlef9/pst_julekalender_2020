@@ -315,3 +315,31 @@ Løsningen er å se etter XOR på 0x38, som gir en Fibonacci sekvens.
 PST{fib0nacc1_0net1m3_p4d}
 
 
+---
+## Luke 12 - Egg nr 8 🥚 - Slede8: 💀.s8
+
+**Oppgave:**<br />
+Det er gitt en ny fil med navn 💀.s8. <br />
+
+
+**Løsning:**<br />
+Reverse engineer 💀.s8 i henhold til https://github.com/PSTNorge/slede8/blob/main/src/runtime.ts<br />
+
+**Svar:**<br />
+
+
+
+---
+## Luke 13 - Hex melding.txt
+
+**Oppgave:**<br />
+Postmottaket fikk en faks "melding.txt" som er skrevet i hex, men de klarer ikke å dekode den.
+
+
+**Løsning:**<br />
+
+
+**Svar:**<br />
+
+
+
