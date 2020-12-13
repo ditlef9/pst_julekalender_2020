@@ -330,7 +330,7 @@ Reverse engineer 💀.s8 i henhold til https://github.com/PSTNorge/slede8/blob/m
 
 
 ---
-## Luke 13 - Hex melding.txt
+## Luke 13 - Hex melding.txt - 10 linjer hex a 91 bytes - Totalt 910 bytes
 
 **Oppgave:**<br />
 Postmottaket fikk en faks "melding.txt" som er skrevet i hex, men de klarer ikke å dekode den.
