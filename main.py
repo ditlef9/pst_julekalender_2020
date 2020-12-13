@@ -8,17 +8,17 @@
 #from day05_easter04_medarbeiderundersokelse.day05_easter04_medarbeiderundersokelse import Day05Medarbeiderundersokelse
 #from day05_dokumentasjonsvelvet.day05_dokumentasjonsvelvet import Day05Dokumentasjonsvelvet
 #from day03_easter02_kladd.Easter02Day03Kladd import Day03Kladd
-#from day01_easter01_rot13_shift.day01_easter01_rot13_shift import Easter01Rot13Shift
+#from day01_easter01_humans.day01_easter01_humans import Easter01Rot13Shift
 #from day07_signal.Day07Signal import Day07Signal
 #from day08_asn_1_spec.Day08ASN1 import Day08ASN1
-#from day01_easter01_rot13_shift.day01_easter01_rot13_shift import Easter01Rot13Shift
+#from day01_easter01_humans.day01_easter01_humans import Easter01Rot13Shift
 #from day09_hexmax.Day09Hexmax import Day09Hexmax
 #from day11_sqlite_md5_sum_changed.Day11SqliteMd5SumChanged import Day11SqliteMd5SumChanged
-#from day01_easter01_rot13_shift.day01_easter01_rot13_shift import Easter01Rot13Shift
+#from day01_easter01_humans.day01_easter01_humans import Easter01Rot13Shift
 #from day12_slede8_read_compound_file.Day12Slede8ReadCompoundFile import Day12Slede8ReadCompoundFile
-#from day01_easter01_rot13_shift.easter01_day01_rot13_shift import Easter01Rot13Shift
-from day12_slede8_read_compound_file.Day12Slede8ReadCompoundFile import Day12Slede8ReadCompoundFile
-from day12_slede8_read_compound_file.Day12Slede8ReadCompoundFileSolve import Day12Slede8ReadCompoundFileSolve
+#from day01_easter01_humans.easter01_day01_rot13_shift import Easter01Rot13Shift
+#from day12_slede8_read_compound_file.Day12Slede8ReadCompoundFile import Day12Slede8ReadCompoundFile
+from day13_hex_code_in_txt_file.Day13HexCodeInTxtFile import Day13HexCodeInTxtFile
 
 
 class Main:
@@ -37,6 +37,6 @@ class Main:
     #day09 = Day09Hexmax()
     #day11 = Day11SqliteMd5SumChanged()
     #easter01 = Easter01Rot13Shift();
-    Day12 = Day12Slede8ReadCompoundFile()
-    Day12Solve = Day12Slede8ReadCompoundFileSolve()
+    #Day12 = Day12Slede8ReadCompoundFile()
+    Day13 = Day13HexCodeInTxtFile()
 
