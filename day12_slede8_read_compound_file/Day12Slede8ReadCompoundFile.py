@@ -1,5 +1,6 @@
 # Filename: Day12Slede8ReadCompoundFile.py
-# Author: S Ditlefsen
+# Author 1: S Ditlefsen
+# Author 2: Julebokk
 # License: http://opensource.org/licenses/gpl-license.php GNU Public License
 
 # Assignment:

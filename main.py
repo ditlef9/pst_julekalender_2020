@@ -19,6 +19,7 @@
 #from day01_easter01_humans.easter01_day01_rot13_shift import Easter01Rot13Shift
 #from day12_slede8_read_compound_file.Day12Slede8ReadCompoundFile import Day12Slede8ReadCompoundFile
 from day13_hex_code_in_txt_file.Day13HexCodeInTxtFile import Day13HexCodeInTxtFile
+from day14_slede8_little_endian.Day14Slede8LittleEndian import Day14Slede8LittleEndian
 
 
 class Main:
@@ -39,4 +40,5 @@ class Main:
     #easter01 = Easter01Rot13Shift();
     #Day12 = Day12Slede8ReadCompoundFile()
     Day13 = Day13HexCodeInTxtFile()
+    Day14 = Day14Slede8LittleEndian()
 
