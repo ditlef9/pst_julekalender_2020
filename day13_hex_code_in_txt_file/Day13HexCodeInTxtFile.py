@@ -69,6 +69,23 @@ class Day13HexCodeInTxtFile:
         print("\n--- Count characters ---")
         print("Counting characters in " + check_string)
         count = {}
+        count['0'] = 0
+        count['1'] = 0
+        count['2'] = 0
+        count['3'] = 0
+        count['4'] = 0
+        count['5'] = 0
+        count['6'] = 0
+        count['7'] = 0
+        count['8'] = 0
+        count['9'] = 0
+        count['A'] = 0
+        count['B'] = 0
+        count['C'] = 0
+        count['D'] = 0
+        count['E'] = 0
+        count['F'] = 0
+
         for s in check_string:
             if s in count:
                 count[s] += 1
