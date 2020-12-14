@@ -343,3 +343,35 @@ Postmottaket fikk en faks "melding.txt" som er skrevet i hex, men de klarer ikke
 
 
 
+---
+## Luke 14 - Hex i Slede8 little endian
+
+**Oppgave:**<br />
+I dag fikk man en ny Slede8-oppgave:
+Ta i mot føde som består av et ukjent antall verdier, der verdien 0x00 markerer siste verdi.
+; Skriv ut verdiene i motsatt rekkefølge.
+
+; Eksempel: 11223344556600 => 665544332211
+; Eksempel: 0123456789abcdef00 => efcdab8967452301
+
+
+**Løsning:**<br />
+
+
+**Svar:**<br />
+
+
+
+---
+## Luke 14 - Egg nr 9 🥚 - Lønningsgløgg
+
+**Oppgave:**<br />
+HR sendte et stemningsbilde fra fredagens lønningsgløgg!
+
+
+**Løsning:**<br />
+Last ned bilde<br />
+Last det opp til Start->Forbedr. 
+
+**Svar:**<br />
+

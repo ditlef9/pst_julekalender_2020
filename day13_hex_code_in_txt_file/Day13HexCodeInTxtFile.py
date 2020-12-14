@@ -8,7 +8,8 @@
 #
 
 # Assignment:
-#   Følgende melding ble tilsendt NPST per faks, og ingen i postmottaket forstår innholdet. Det ser ut som den bruker en eller annen form for hex-enkoding, men selv hex-dekodet gir faksen ingen mening.
+#   Følgende melding ble tilsendt NPST per faks, og ingen i postmottaket forstår innholdet.
+#   Det ser ut som den bruker en eller annen form for hex-enkoding, men selv hex-dekodet gir faksen ingen mening.
 #
 #   Klarer du å finne mening i meldingen?
 
