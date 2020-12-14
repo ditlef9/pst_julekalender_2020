@@ -1,0 +1,62 @@
+; Dokumentasjon https://github.com/PSTNorge/slede8/blob/main/README.md
+
+; Føde består av et ukjent antall verdier, der verdien 0x00 markerer siste verdi.
+; Skriv ut verdiene i motsatt rekkefølge.
+
+; Eksempel: 11223344556600 => 665544332211
+; Eksempel: 0123456789abcdef00 => efcdab8967452301
+;
+; Tilgjengelig minne er 4096 bytes, med adressene 0..4095.
+; Programmer lastes inn fra addresse 0,
+; slik at første instruksjon alltid vil ha addresse 0.
+;
+
+SETT r12, 0xFF  ; Høyeste verdi for r0, brukes ved subtraksjon
+SETT r13, 0x01  ; Teller for les lagre, teller antall bytes som er lest
+SETT r14, 0x01  ; Er register dedikert til verdien 1
+SETT r15, 0     ; Et register dedikert til verdien 0
+FINN 0x99
+
+loop_les_lagre:
+    ; Les føde
+    LES r3
+
+    ; Hvis føde ikke er 0, ønsker vi å lagre det
+    LIK r3, r15            ; Sjekk om input er 0, hvis det så avslutt
+    BHOPP loop_last_skriv
+
+    ; Lagre føde
+    LAGR r3
+
+    ; Øk pekeren
+    PLUSS r0, r14
+    ULIK r0, r15; Hvis r0!=0x00
+        BHOPP Gjenta_loopen
+    PLUSS r1, r14
+
+    Gjenta_loopen:
+    HOPP loop_les_lagre
+
+loop_last_skriv:
+    ; Mink pekeren
+    MINUS r0, r14
+    ULIK r0, r12; Hvis r0!=0xFF
+        BHOPP Finn_info_i_registeret
+    MINUS r1, r14
+
+    Finn_info_i_registeret:
+    LAST r3
+
+    ; Sjekk om vi skal fortsette eller ikke
+    LIK r3, r15            ; Sjekk om input er 0, hvis det så avslutt
+    BHOPP stopp
+
+    ; Skriv til output
+    SKRIV r3
+
+    ; Loop igjen
+    HOPP loop_last_skriv
+
+
+stopp:
+    STOPP

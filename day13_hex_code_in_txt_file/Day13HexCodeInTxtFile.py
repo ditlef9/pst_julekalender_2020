@@ -24,8 +24,13 @@ class Day13HexCodeInTxtFile:
     """ Read Hex file ---------------------------------------------------------------- """
     def readHexFile(fileName):
         # Read file
-        print("Read file " + fileName)
+        print("--- Read file " + fileName + " ---")
         file = open(fileName, "r")
+        return_string = "";
+
+
+        # Dictionary
+        #frequency_analysis = dict()
 
         # Repeat for each song in the text file
         x = 0
@@ -39,6 +44,15 @@ class Day13HexCodeInTxtFile:
             total_number_of_bytes = total_number_of_bytes + number_of_bytes_per_line;
             print("Line " + str(x) + ", len " + str(line_len) + ", bytes " + str(number_of_bytes_per_line) + ": " + str(line))
 
+            # Go trough each byte
+            #y = 0
+            #for character in line:
+            #    print("Line " + str(x) + " Char " + str(y) + ": " + character)
+            #    y = y + 1
+
+            # Return string
+            return_string = return_string + line;
+
             x = x + 1;
 
         # Print summary of data
@@ -48,8 +62,23 @@ class Day13HexCodeInTxtFile:
         print("Bytes per line: " + str(number_of_bytes_per_line))
         print("Total number of bytes: " + str(total_number_of_bytes))
 
-        return file
+        return return_string
 
+    """ Count chacaters -------------------------------------------------------------- """
+    def count_chars(check_string):
+        print("\n--- Count characters ---")
+        print("Counting characters in " + check_string)
+        count = {}
+        for s in check_string:
+            if s in count:
+                count[s] += 1
+            else:
+                count[s] = 1
+
+        for key in count:
+            if count[key] > 1:
+                print(key, count[key])
 
     """ Script start ---------------------------------------------------------------- """
     read_file = readHexFile("./day13_hex_code_in_txt_file/melding.txt")
+    count_chars(read_file)
