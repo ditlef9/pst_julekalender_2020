@@ -12,7 +12,7 @@
 #   Det ser ut som den bruker en eller annen form for hex-enkoding, men selv hex-dekodet gir faksen ingen mening.
 #
 #   Klarer du å finne mening i meldingen?
-
+from collections import Counter
 
 
 class Day13HexCodeInTxtFile:
@@ -68,33 +68,32 @@ class Day13HexCodeInTxtFile:
     def count_chars(check_string):
         print("\n--- Count characters ---")
         print("Counting characters in " + check_string)
-        count = {}
-        count['0'] = 0
-        count['1'] = 0
-        count['2'] = 0
-        count['3'] = 0
-        count['4'] = 0
-        count['5'] = 0
-        count['6'] = 0
-        count['7'] = 0
-        count['8'] = 0
-        count['9'] = 0
-        count['A'] = 0
-        count['B'] = 0
-        count['C'] = 0
-        count['D'] = 0
-        count['E'] = 0
-        count['F'] = 0
+        dictionary = dict()
 
         for s in check_string:
-            if s in count:
-                count[s] += 1
+            if s in dictionary:
+                dictionary[s] += 1
             else:
-                count[s] = 1
+                dictionary[s] = 1
 
-        for key in count:
-            if count[key] > 1:
-                print(key, count[key])
+        # Print dictionary
+        print("\nDictionary first to last:")
+        for key in dictionary:
+            print(key, dictionary[key])
+
+        # Print first to last
+        convert_string = ""
+        counter = Counter(check_string)
+        print('\nDictionary sorted on most common:')
+        for letter, count in counter.most_common(500):
+            print(str(letter) + " " + str(count))
+
+            convert_string = convert_string + " 0x" + str(count)
+
+        # Convert string
+        print("\nString to convert:")
+        print(convert_string)
+
 
     """ Script start ---------------------------------------------------------------- """
     read_file = readHexFile("./day13_hex_code_in_txt_file/melding.txt")
