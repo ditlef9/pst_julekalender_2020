@@ -366,7 +366,21 @@ Din verifikasjonskode er: PST{InReverseCountryEverythingIsPossible}
 
 
 ---
-## Luke 14 - Egg nr 9 🥚 - Lønningsgløgg
+## Luke 14 - Egg nr 9 🥚 - Ny kode for slede8
+
+**Oppgave:**<br />
+Vi fikk en ny e-læringskode modul for slede 8:
+dc0583ff102e48c6
+
+
+**Løsning:**<br />
+Bruk samme som dag 14.
+
+**Svar:**<br />
+EGG{5f5fc8819e2cc6be9c6a19370a5030af}
+
+---
+## Luke 14 - Egg nr ?? 🥚 - Lønningsgløgg
 
 **Oppgave:**<br />
 HR sendte et stemningsbilde fra fredagens lønningsgløgg!
