@@ -333,46 +333,46 @@ Reverse engineer 💀.s8 i henhold til https://github.com/PSTNorge/slede8/blob/m
 ## Luke 13 - Hex melding.txt - 10 linjer hex a 91 bytes - Totalt 910 bytes
 
 **Oppgave:**<br />
-Postmottaket fikk en faks "melding.txt" som er skrevet i hex, men de klarer ikke å dekode den.
-Meldingen besto av 10 linjer hex-koder a 182 karakterer per linje (dvs 91 bytes per linje). 
+Postmottaket fikk en faks "melding.txt" som er skrevet i hex, men de klarer ikke å dekode den.<br />
+Meldingen besto av 10 linjer hex-koder a 182 karakterer per linje (dvs 91 bytes per linje). <br />
 
 **Løsning:**<br />
-Denne er løst med to ulike Pythonscript.
-1) Day13HexCodeInTxtFile1FindPattern: Denne leser inn melding.txt og skriver ut hvor mange ulike ganger ulike bokstaver
-   er brukt. F.eks. 7 er brukt 194 ganger, F er brukt 192 ganger osv. Da fikk vi denne listen:
-      7 194
-      F 192
-      5 189
-      1 189
-      E 183
-      C 180
-      2 178
-      3 160
-      4 56
-      6 49
-      A 47
-      9 46
-      B 42
-      0 41
-      8 39
-      D 35
+Denne er løst med to ulike Pythonscript.<br />
+1) Day13HexCodeInTxtFile1FindPattern: Denne leser inn melding.txt og skriver ut hvor mange ulike ganger ulike bokstaver<br />
+   er brukt. F.eks. 7 er brukt 194 ganger, F er brukt 192 ganger osv. Da fikk vi denne listen:<br />
+      7 194<br />
+      F 192<br />
+      5 189<br />
+      1 189<br />
+      E 183<br />
+      C 180<br />
+      2 178<br />
+      3 160<br />
+      4 56<br />
+      6 49<br />
+      A 47<br />
+      9 46<br />
+      B 42<br />
+      0 41<br />
+      8 39<br />
+      D 35<br />
 
-   Alle tegn som er brukt over 100 ganger skal erstattes med space, mens alle tegn som er brukt under 100 ganger skal
-   erstattes med X: 
-       replacement_chars_a = {"7", "F", "5", "1", "E", "C", "2", "3"}
-       replacement_chars_b = {"4", "6", "A", "9", "B", "0", "8", "D"}
-       replacement_character_a = " "
-       replacement_character_b = "X"
+   Alle tegn som er brukt over 100 ganger skal erstattes med space, mens alle tegn som er brukt under 100 ganger skal<br />
+   erstattes med X: <br />
+       replacement_chars_a = {"7", "F", "5", "1", "E", "C", "2", "3"}<br />
+       replacement_chars_b = {"4", "6", "A", "9", "B", "0", "8", "D"}<br />
+       replacement_character_a = " "<br />
+       replacement_character_b = "X"<br /><br />
    
-2) Day13HexCodeInTxtFile2Solve: Dette scriptet erstatter tegnene etter listen og skriver ut resultatet:
- XXXX    XXXX  XXXXX    XX    XXXX  X   X  XXXXX   XXX   X   X  X   X         XXXXX  X       XXX    XXX          XXXXX   XXXX          XXXX  X   X  XXXXX   XXX   X   X  X   X  X  X  
- X   X  X        X     X  X  X      XX  X  X      X   X  X   X  X   X         X      X      X   X  X   X           X    X             X      XX  X  X      X   X  X   X  X   X     X  
- X   X  X        X     X     X      X X X  X      X   X  X  X   X   X         X      X      X   X  X               X    X             X      X X X  X      X   X  X  X   X   X     X  
- XXXX    XXX     X    X       XXX   X  XX  XXX    X   X  XXX     X X          XXX    X      X   X  X XXX           X     XXX           XXX   X  XX  XXX    X   X  XXX     X X       X 
- X          X    X     X         X  X   X  X      XXXXX  X  X     X           X      X      XXXXX  X   X           X        X             X  X   X  X      XXXXX  X  X     X       X  
- X          X    X     X  X      X  X   X  X      X   X  X   X    X           X      X      X   X  X   X           X        X             X  X   X  X      X   X  X   X    X       X  
- X      XXXX     X      XX   XXXX   X   X  XXXXX  X   X  X   X    X    XXXXX  X      XXXXX  X   X   XXX   XXXXX  XXXXX  XXXX   XXXXX  XXXX   X   X  XXXXX  X   X  X   X    X    X  X  
-                                                                                                                                                                                 XX   
+2) Day13HexCodeInTxtFile2Solve: Dette scriptet erstatter tegnene etter listen og skriver ut resultatet:<br />
+ XXXX    XXXX  XXXXX    XX    XXXX  X   X  XXXXX   XXX   X   X  X   X         XXXXX  X       XXX    XXX          XXXXX   XXXX          XXXX  X   X  XXXXX   XXX   X   X  X   X  X  X  <br />
+ X   X  X        X     X  X  X      XX  X  X      X   X  X   X  X   X         X      X      X   X  X   X           X    X             X      XX  X  X      X   X  X   X  X   X     X  <br />
+ X   X  X        X     X     X      X X X  X      X   X  X  X   X   X         X      X      X   X  X               X    X             X      X X X  X      X   X  X  X   X   X     X  <br />
+ XXXX    XXX     X    X       XXX   X  XX  XXX    X   X  XXX     X X          XXX    X      X   X  X XXX           X     XXX           XXX   X  XX  XXX    X   X  XXX     X X       X <br />
+ X          X    X     X         X  X   X  X      XXXXX  X  X     X           X      X      XXXXX  X   X           X        X             X  X   X  X      XXXXX  X  X     X       X  <br />
+ X          X    X     X  X      X  X   X  X      X   X  X   X    X           X      X      X   X  X   X           X        X             X  X   X  X      X   X  X   X    X       X  <br />
+ X      XXXX     X      XX   XXXX   X   X  XXXXX  X   X  X   X    X    XXXXX  X      XXXXX  X   X   XXX   XXXXX  XXXXX  XXXX   XXXXX  XXXX   X   X  XXXXX  X   X  X   X    X    X  X  <br />
+                                                                                                                                                                                 XX   <br />
                   
 
 **Svar:**<br />
@@ -383,15 +383,15 @@ PST{SNEAKY_FLAG_IS_SNEAKY}
 ## Luke 14 - Hex i Slede8 little endian
 
 **Oppgave:**<br />
-I dag fikk man en ny Slede8-oppgave:
-Ta i mot føde som består av et ukjent antall verdier, der verdien 0x00 markerer siste verdi.
-; Skriv ut verdiene i motsatt rekkefølge.
+I dag fikk man en ny Slede8-oppgave:<br />
+Ta i mot føde som består av et ukjent antall verdier, der verdien 0x00 markerer siste verdi.<br />
+; Skriv ut verdiene i motsatt rekkefølge.<br />
 
-; Eksempel: 11223344556600 => 665544332211
-; Eksempel: 0123456789abcdef00 => efcdab8967452301
+; Eksempel: 11223344556600 => 665544332211<br />
+; Eksempel: 0123456789abcdef00 => efcdab8967452301<br />
 
-; E-læringskode = 97672649875ca349
-; Slede8        = https://slede8.npst.no
+; E-læringskode = 97672649875ca349<br />
+; Slede8        = https://slede8.npst.no<br />
 
 **Løsning:**<br />
 https://slede8.npst.no/#N4Igzg9grgTgxgUwMIQCYJALhAbgAQAiEA1lALYIB2ALgIZgBWEleAFtdQA5iYD0vAcwCW1VlABGAOjgQyvAAoBlACoA5CDAEJeYADYJ0ADl7jdEcbzK0hlXgCUAogEECAWQeSyqADqVf+ADEAD-Q8cQQwagBTmDxaADc8BGo8KGIGKhTaGlpdXTx4hBhUISKAGjx0WMLi0pYABgAPevq8KxhiIqK8MCFIhAKiksl-PEViGCFEqBSakqoBoTaIajBaDjwYBGJOgDMg3S0Rv0p8B2IwBDJOBF1MPABGB4AmZ4BmN4AWT4BWH4A2f4tPAAXgAfHhAX9vh9Xk9RudLtdbvd6i8vgCAOyGACctHEcHQu2B4KSu0J+Nx-0xv3eaP8o2UQkOGUoWl0QgEbRslAG3U+9Rx-zCAE9qBEKhRUHFUFswJdeXh6pJJAKcT9JHhRvIYBABDBaGQKLFdPRxWA8Dy8LsDTLZRFLkqKqM9EJiHEUvsYP1LZRIjA0oxmHE8tQhNL4sy2LQ7XLHcqGSdFA5lMpNi8Kk0AgE8Hh8AAJIIiiLiwa1a0aTb1CriAOdC2FaVgCTUA0XJhJlNpmAPN6Z5oPXP4ZS3fSxXaV-QW036hAVcV5brZOh5UXmnqyJImku+ZOp9Offtood4ByxLbCfqxdAlTowFJh-JzOqPXdd9M-TO579nFIXvriteBhukUD5Rs+VBKr4AQAJKqKoSqNDiOK+L4ZgQJwAD6U7YbQs6YL4355ngAAyETWiECCEd+JEOIomxvKhLA-ng+aRha+yhG6nRbk6eBBH6d4FEsUR4DOWyVMk1G5iRMEANIMRUPY-ERqksYoGQ7Hgm42JwMy8dWbDsZJKRgKJCR6DM1DSXgABC+YAPLyPIYkQBhuGRJhYATFMTFEfgJF4RJnFUcxMlOAA4nYDF+SxAAb7o3HeVA2fIJEAKqKPRMCGT2nw2elskKTlSkPD8BbGTlACEIJNMCNlEfZTkuRFrJ0Nhbk3CcRFpZl2UPKVnxEbFuatZktAdRhVAEWFrHNa57k4eJoVoZ1HnUF5PnxDN-l4K4NiJdsXTdd+rhwZlVaDQVRWXemzwVX0VY1VmAQNd+TXOXgAQ8phNgTr9mH-leyTDbNZ2qBdPZXSdubfZQlC-ZQ-1CIDCCXoByQ7TRTgqDFMPERp2zupukY9MQuQVvelwcHyi6xNxoVETdMB9h+alqfghNaTplB6Sk3SGawxnoKZ5nxJZHA2R9LmRBhnAjQTW14I+2kzHzNmKHJdgwQAanjNkBZ1loCKyNmOZ96FYaanneZM8RMb4sucJwWO5iozW+CAZQgLpMxYCATyvB8LQgAAvkAA
@@ -405,7 +405,7 @@ PST{InReverseCountryEverythingIsPossible}
 ## Luke 14 - Egg nr 9 🥚 - Ny kode for slede8
 
 **Oppgave:**<br />
-Vi fikk en ny e-læringskode modul for slede 8:
+Vi fikk en ny e-læringskode modul for slede 8:<br />
 dc0583ff102e48c6
 
 
@@ -437,17 +437,17 @@ Det kom inn et nytt signal av typen "data2.complex16u" som varierer i frekvens.
 
 
 **Løsning:**<br />
-Du trenger Universal Radio Hacker for å løse oppgaven:
-1) Last ned Git
-2) Last ned Python
-3) Last ned Pycharm
-4) Åpne Git CMD og skriv: 
-   *cd PycharmProjects
-   git clone https://github.com/jopohl/urh.git*
+Du trenger Universal Radio Hacker for å løse oppgaven:<br />
+1) Last ned Git<br />
+2) Last ned Python<br />
+3) Last ned Pycharm<br />
+4) Åpne Git CMD og skriv: <br />
+   *cd PycharmProjects<br />
+   git clone https://github.com/jopohl/urh.git*<br />
    
-5) Åpne prosjektet i PyCharm
+5) Åpne prosjektet i PyCharm<br />
 
-6) I PyCharm skriv: *python setup.py*
+6) I PyCharm skriv: *python setup.py*<br />
 
 **Svar:**<br />
 
