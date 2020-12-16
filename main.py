@@ -1,25 +1,8 @@
 # Author: Sindre Andre Ditlefsen
 # Date: 24.11.2020
 # Version: 1.0
-
-#from day01_rot24.day01 import Day01
-#from day02_character_picking.day02 import Day02
-#from day04_database_maaltall.day04 import Day04
-#from day05_easter04_medarbeiderundersokelse.day05_easter04_medarbeiderundersokelse import Day05Medarbeiderundersokelse
-#from day05_dokumentasjonsvelvet.day05_dokumentasjonsvelvet import Day05Dokumentasjonsvelvet
-#from day03_easter02_kladd.Easter02Day03Kladd import Day03Kladd
-#from day01_easter01_humans.day01_easter01_humans import Easter01Rot13Shift
-#from day07_signal.Day07Signal import Day07Signal
-#from day08_asn_1_spec.Day08ASN1 import Day08ASN1
-#from day01_easter01_humans.day01_easter01_humans import Easter01Rot13Shift
-#from day09_hexmax.Day09Hexmax import Day09Hexmax
-#from day11_sqlite_md5_sum_changed.Day11SqliteMd5SumChanged import Day11SqliteMd5SumChanged
-#from day01_easter01_humans.day01_easter01_humans import Easter01Rot13Shift
-#from day12_slede8_read_compound_file.Day12Slede8ReadCompoundFile import Day12Slede8ReadCompoundFile
-#from day01_easter01_humans.easter01_day01_rot13_shift import Easter01Rot13Shift
-#from day12_slede8_read_compound_file.Day12Slede8ReadCompoundFile import Day12Slede8ReadCompoundFile
-from day13_hex_code_in_txt_file.Day13HexCodeInTxtFile import Day13HexCodeInTxtFile
-#from day14_slede8_little_endian.Day14Slede8LittleEndian import Day14Slede8LittleEndian
+from day13_hex_code_in_txt_file import Day13HexCodeInTxtFile1FindPattern
+from day13_hex_code_in_txt_file.Day13HexCodeInTxtFile2Solve import Day13HexCodeInTxtFile2Solve
 
 
 class Main:
@@ -39,6 +22,7 @@ class Main:
     #day11 = Day11SqliteMd5SumChanged()
     #easter01 = Easter01Rot13Shift();
     #Day12 = Day12Slede8ReadCompoundFile()
-    Day13 = Day13HexCodeInTxtFile()
+    Day13a = Day13HexCodeInTxtFile1FindPattern
+    Day13b = Day13HexCodeInTxtFile2Solve
     #Day14 = Day14Slede8LittleEndian()
 

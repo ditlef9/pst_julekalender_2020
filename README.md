@@ -334,13 +334,49 @@ Reverse engineer 💀.s8 i henhold til https://github.com/PSTNorge/slede8/blob/m
 
 **Oppgave:**<br />
 Postmottaket fikk en faks "melding.txt" som er skrevet i hex, men de klarer ikke å dekode den.
-
+Meldingen besto av 10 linjer hex-koder a 182 karakterer per linje (dvs 91 bytes per linje). 
 
 **Løsning:**<br />
+Denne er løst med to ulike Pythonscript.
+1) Day13HexCodeInTxtFile1FindPattern: Denne leser inn melding.txt og skriver ut hvor mange ulike ganger ulike bokstaver
+   er brukt. F.eks. 7 er brukt 194 ganger, F er brukt 192 ganger osv. Da fikk vi denne listen:
+      7 194
+      F 192
+      5 189
+      1 189
+      E 183
+      C 180
+      2 178
+      3 160
+      4 56
+      6 49
+      A 47
+      9 46
+      B 42
+      0 41
+      8 39
+      D 35
 
+   Alle tegn som er brukt over 100 ganger skal erstattes med space, mens alle tegn som er brukt under 100 ganger skal
+   erstattes med X: 
+       replacement_chars_a = {"7", "F", "5", "1", "E", "C", "2", "3"}
+       replacement_chars_b = {"4", "6", "A", "9", "B", "0", "8", "D"}
+       replacement_character_a = " "
+       replacement_character_b = "X"
+   
+2) Day13HexCodeInTxtFile2Solve: Dette scriptet erstatter tegnene etter listen og skriver ut resultatet:
+ XXXX    XXXX  XXXXX    XX    XXXX  X   X  XXXXX   XXX   X   X  X   X         XXXXX  X       XXX    XXX          XXXXX   XXXX          XXXX  X   X  XXXXX   XXX   X   X  X   X  X  X  
+ X   X  X        X     X  X  X      XX  X  X      X   X  X   X  X   X         X      X      X   X  X   X           X    X             X      XX  X  X      X   X  X   X  X   X     X  
+ X   X  X        X     X     X      X X X  X      X   X  X  X   X   X         X      X      X   X  X               X    X             X      X X X  X      X   X  X  X   X   X     X  
+ XXXX    XXX     X    X       XXX   X  XX  XXX    X   X  XXX     X X          XXX    X      X   X  X XXX           X     XXX           XXX   X  XX  XXX    X   X  XXX     X X       X 
+ X          X    X     X         X  X   X  X      XXXXX  X  X     X           X      X      XXXXX  X   X           X        X             X  X   X  X      XXXXX  X  X     X       X  
+ X          X    X     X  X      X  X   X  X      X   X  X   X    X           X      X      X   X  X   X           X        X             X  X   X  X      X   X  X   X    X       X  
+ X      XXXX     X      XX   XXXX   X   X  XXXXX  X   X  X   X    X    XXXXX  X      XXXXX  X   X   XXX   XXXXX  XXXXX  XXXX   XXXXX  XXXX   X   X  XXXXX  X   X  X   X    X    X  X  
+                                                                                                                                                                                 XX   
+                  
 
 **Svar:**<br />
-
+PST{SNEAKY_FLAG_IS_SNEAKY}
 
 
 ---
@@ -389,6 +425,29 @@ HR sendte et stemningsbilde fra fredagens lønningsgløgg!
 **Løsning:**<br />
 Last ned bilde<br />
 Last det opp til Start->Forbedr. 
+
+**Svar:**<br />
+
+
+---
+## Luke 15 - Signal
+
+**Oppgave:**<br />
+Det kom inn et nytt signal av typen "data2.complex16u" som varierer i frekvens.
+
+
+**Løsning:**<br />
+Du trenger Universal Radio Hacker for å løse oppgaven:
+1) Last ned Git
+2) Last ned Python
+3) Last ned Pycharm
+4) Åpne Git CMD og skriv: 
+   *cd PycharmProjects
+   git clone https://github.com/jopohl/urh.git*
+   
+5) Åpne prosjektet i PyCharm
+
+6) I PyCharm skriv: *python setup.py*
 
 **Svar:**<br />
 

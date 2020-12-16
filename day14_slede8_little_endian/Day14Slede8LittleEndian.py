@@ -1,4 +1,4 @@
-# Filename: Day13HexCodeInTxtFile.py
+# Filename: Day13HexCodeInTxtFile1FindPattern.py
 # Author 1: S Ditlefsen
 # Author 2: Julebokk
 # Date 14 Dec 2020

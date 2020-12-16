@@ -1,4 +1,4 @@
-# Filename: Day13HexCodeInTxtFile.py
+# Filename: Day13HexCodeInTxtFile1FindPattern.py
 # Author: S Ditlefsen
 # Date 13 Dec 2020
 # License: http://opensource.org/licenses/gpl-license.php GNU Public License
@@ -19,6 +19,7 @@ class Day13HexCodeInTxtFile:
     print('')
     print('~~~~~~~~~~~~~~~~~~~~~~~~ Day 13 ~~~~~~~~~~~~~~~~~~~~~~~~')
     print('~~~~~~~~~~~~~~~~ Hex code from Fax machine ~~~~~~~~~~~~~')
+    print('~~~~~~~~~~~~~~~~~~~~~ (1) Find pattern ~~~~~~~~~~~~~~~~~~')
     print('')
 
     """ Read Hex file ---------------------------------------------------------------- """
@@ -88,11 +89,29 @@ class Day13HexCodeInTxtFile:
         for letter, count in counter.most_common(500):
             print(str(letter) + " " + str(count))
 
-            convert_string = convert_string + " 0x" + str(count)
 
-        # Convert string
-        print("\nString to convert:")
-        print(convert_string)
+        # Replacement chars
+        print("\nReplacement chars:")
+        print("replacement_chars_a = {", end="")
+        x = 0
+        for letter, count in counter.most_common(500):
+            if(x == 0):
+                print('"' + str(letter) + '"', end="")
+            else:
+                print(', "' + str(letter) + '"', end="")
+            x = x+1
+        print("}")
+        print("replacement_chars_b = {", end="")
+        x = 0
+        for letter, count in counter.most_common(500):
+            if(x == 0):
+                print('"' + str(letter) + '"', end="")
+            else:
+                print(', "' + str(letter) + '"', end="")
+            x = x+1
+        print("}")
+        print('replacement_character_a = " " ')
+        print('replacement_character_b = "." ')
 
 
     """ Script start ---------------------------------------------------------------- """
