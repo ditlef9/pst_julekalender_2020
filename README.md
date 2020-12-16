@@ -437,17 +437,21 @@ Det kom inn et nytt signal av typen "data2.complex16u" som varierer i frekvens.
 
 
 **Løsning:**<br />
-Du trenger Universal Radio Hacker for å løse oppgaven:<br />
-1) Last ned Git<br />
-2) Last ned Python<br />
-3) Last ned Pycharm<br />
-4) Åpne Git CMD og skriv: <br />
-   *cd PycharmProjects<br />
-   git clone https://github.com/jopohl/urh.git*<br />
-   
-5) Åpne prosjektet i PyCharm<br />
+Du trenger Universal Radio Hacker for å løse oppgaven.<br />
+Windows installasjonsfil: https://github.com/jopohl/urh/releases<br /><br />
 
-6) I PyCharm skriv: *python setup.py*<br />
+Python kildekode (valgfritt):<br />
+1) Installer Visual Studio Community med C++ build tools
+2) Last ned Git<br />
+3) Last ned Python<br />
+4) Last ned Pycharm<br />
+5) Åpne Pycharm og velg nytt prosjekt "Get from VCS": <br />
+   *https://github.com/jopohl/urh.git*<br />
+6) Velg Terminal i PyCharm og skriv: *python setup.py*<br /><br />
+
+I Universal Radio Hacker:<br />
+File -> Open -> data2.complex16u<br />
+Analysis -> View data as "ASCII"<br />
 
 **Svar:**<br />
 
