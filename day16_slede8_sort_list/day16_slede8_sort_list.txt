@@ -1,0 +1,12 @@
+
+; Første byte med føde er et tall N som representerer
+; antallet påfølgende bytes med føde.
+; de påfølgende verdiene representerer en liste med verdier.
+; skriv ut verdiene i lista sortert i stigende rekkefølge
+
+; Eksempel: 06112233445566 => 112233445566
+; Eksempel: 06665544332211 => 112233445566
+
+; OBS: Implementasjonen kan ikke benytte mer enn (24* N^2 + 5000) skritt.
+; OBS: Du kan endre maks antall skritt lokalt ved å skrive localStorage.setItem('🚲', 10000000)
+

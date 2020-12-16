@@ -451,3 +451,27 @@ Du trenger Universal Radio Hacker for å løse oppgaven:<br />
 
 **Svar:**<br />
 
+---
+## Luke 16 - Slede 8 - Sort list
+
+**Oppgave:**<br />
+I slede 8 kjør e-læringsmodul a522c5a55bcb743e.<br />
+Slede8: https://slede8.npst.no/<br />
+Dokumentasjon: https://github.com/pstnorge/slede8<br />
+
+; Første byte med føde er et tall N som representerer<br />
+; antallet påfølgende bytes med føde.<br />
+; de påfølgende verdiene representerer en liste med verdier.<br />
+; skriv ut verdiene i lista sortert i stigende rekkefølge<br />
+
+; Eksempel: 06112233445566 => 112233445566<br />
+; Eksempel: 06665544332211 => 112233445566
+
+; OBS: Implementasjonen kan ikke benytte mer enn (24* N^2 + 5000) skritt.<br />
+; OBS: Du kan endre maks antall skritt lokalt ved å skrive localStorage.setItem('🚲', 10000000)<br />
+
+
+**Løsning:**<br />
+
+**Svar:**<br />
+
