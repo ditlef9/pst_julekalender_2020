@@ -456,7 +456,7 @@ Analysis -> View data as "ASCII"<br />
 **Svar:**<br />
 
 ---
-## Luke 16 - Slede 8 - Sort list
+## Luke 16 - Slede 8: Sort list
 
 **Oppgave:**<br />
 I slede 8 kjør e-læringsmodul a522c5a55bcb743e.<br />
