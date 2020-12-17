@@ -452,8 +452,10 @@ Python kildekode (valgfritt):<br />
 I Universal Radio Hacker:<br />
 File -> Open -> data2.complex16u<br />
 Analysis -> View data as "ASCII"<br />
+Decoding: Manchester II
 
 **Svar:**<br />
+PST{m4nch3st3r_3nc0d1ng_1s_4_l0t_0f_fun!}
 
 ---
 ## Luke 16 - Slede 8: Sort list
