@@ -479,3 +479,18 @@ Dokumentasjon: https://github.com/pstnorge/slede8<br />
 
 **Svar:**<br />
 
+
+---
+## Luke 17 - ETSI232-1
+
+**Oppgave:**<br />
+NPST har avlyttet telefonen til en mistenkt etteretningsoffiser fra SPST. <br />
+Teleoperatøren har oversendt data i henhold til ETSI232-1, <br />
+men våre systemer klarer ikke å forstå innholdet. <br />
+Vi mistenker at det er benyttet en svært enkel kode, <br />
+men våre analytikere sier det er LITE SANNSYNLIG at XMAS er benyttet.<br />
+
+
+**Løsning:**<br />
+
+**Svar:**<br />
